@@ -6,7 +6,7 @@ import {CaretDown  } from "@phosphor-icons/react";
 
 const Hero = () => {
   return (
-    <div className=' '>
+    <div className=''>
 
 <div className='relative flex w-full items-center justify-center'>
 <img className='w-full' src={HeroImage1} alt="" />

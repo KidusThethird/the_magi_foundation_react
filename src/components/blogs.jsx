@@ -21,7 +21,7 @@ const Blog = () => {
       
       };
 
-    return <div>
+    return <div className=" px-10">
         <div>
             <h1 className="text-4xl font-semibold text-gray-700 text-center pb-10">Blogs</h1>
         </div>
