@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../components/hero'
 import About from '../components/about'
 import Blog from '../components/blogs'
+import Advertisment from '../components/advertisement'
 
 
  const home = () => {
@@ -10,6 +11,7 @@ import Blog from '../components/blogs'
     <Hero />
     <About />
     <Blog />
+    <Advertisment />
     </>
 
   )
