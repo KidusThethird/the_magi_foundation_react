@@ -4,6 +4,7 @@ import About from '../components/about'
 import Blog from '../components/blogs'
 import Advertisment from '../components/advertisement'
 import BreakBanner from '../components/break-banner'
+import OurVenue from '../components/ourVenue'
 
 
  const home = () => {
@@ -14,6 +15,7 @@ import BreakBanner from '../components/break-banner'
     <Blog />
     <Advertisment />
     <BreakBanner />
+    <OurVenue />
  
     </>
 
