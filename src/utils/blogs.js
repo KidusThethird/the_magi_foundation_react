@@ -20,7 +20,7 @@ export const BlogList = [
         highlight: "Meet 8 and 10 year old and brother and sister, Sumeya Abdulkerim and Rahamat Abdulkerim. They are students...",
         fullText: "Meet 8 and 10 year old and brother and sister, Sumeya Abdulkerim and Rahamat Abdulkerim. They are students and live in the pictured room with the deteriorating ceiling with their father Abdulkerim. Your probably wondering where is the mom in this picture, their mom separated from their father. The father, Abdulkerim suffers from mental illness and can't properly provide for the children. Even so, he stands beside Sumeya and Rahamat, eyes filled with hope for tomorrow. This is the story of two stars motherless and with a mentally ill father, the Magi aims to be the hope for such circumstances.\n\nWe want to create a sustainable living condition so children like Sumeya and Rahamat can not only be filled with hope but with hope enough to one day also impact other lives. Currently the Magi helps provide basic day to day food expenses. The end goal of the Magi is to be able to get these stars in a safe and caring environment where they can pursue their education.\n\n Pursue their education without having to worry about basic necessities, the Magi wants to be that safe haven. The basic necessities that a sustauble living condtion includes clothing, shelter and food, considered luxariouse items to the children the Magi focuses on. Anyone who has read this far can partake whether that be in a one time donation or going as far as sponsoring a child. For more information on this story our contact details are entitled in the contact secetion of this website.",
         image: BlogImage2,
-        displayOnHomePage: false,
+        displayOnHomePage: true,
        },
        {
         topic: "School material assistance",
@@ -41,9 +41,9 @@ export const BlogList = [
        {
         topic: "Children of Brave Woman from the Streets of Ethiopia",
         genre : "Life support",
-        highlight: "Meet brother and sister Huziefa Abdulehadid and Enib Abdulehadid, children of the brave woman Jemil, from the...",
+        highlight: "Meet brother and sister Huziefa Abdulehadid and Enib Abdulehadid, children of the brave woman Jemil...",
         fullText: "Meet brother and sister Huziefa Abdulehadid and Enib Abdulehadid, children of the brave woman Jemil, from the streets of Ethiopia. Huziefa is in fourth grade while Enib is in kindergarten. The fort behind them hanging by a couple of large sticks is the place they have been calling home for the past two years. The father of these stars is half paralyzed, suffers from high blood pressure and is also a diabetic.\n        While some are orphans, many have families but grew up in slum-like settlements in extreme poverty.\n        Their mother Jemil provides for them by collecting and selling bottles and plastic bags, and sometimes if she's lucky is able to make money by washing other peoples dirty clothes. Even through the struggle of trying to survive this hard life, Jamil is putting up a brave fight for her children. She is the definition of a true mother a warrior at that.\n        Even through these hard circumstances Jemil is paying the price to put her children through school in hopes of one day seeing them escape the hardships they are currently facing. Imagine how far these children with so much hope could go if they had some support. Imagine the rest this hard working warrior of a mother will feel when her children are being properly educated. The Magi aims to support and address the lives of children like Huziefa and Enib.",
         image: BlogImage5,
-        displayOnHomePage: false,
+        displayOnHomePage: true,
        },
 ]
