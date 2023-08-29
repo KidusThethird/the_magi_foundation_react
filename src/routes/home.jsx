@@ -8,6 +8,7 @@ import OurVenue from '../components/ourVenue'
 import Testimonial from '../components/testimonial'
 import ContactUsForm from '../components/contactUsForm'
 import Footer from '../components/footer'
+import SponsorShip from '../components/sponsorShip'
 
 
  const home = () => {
@@ -18,6 +19,7 @@ import Footer from '../components/footer'
     <Blog />
     <Advertisment />
     <BreakBanner />
+    <SponsorShip />
     <OurVenue />
     <Testimonial />
     <ContactUsForm />
