@@ -7,6 +7,7 @@ import BreakBanner from '../components/break-banner'
 import OurVenue from '../components/ourVenue'
 import Testimonial from '../components/testimonial'
 import ContactUsForm from '../components/contactUsForm'
+import Footer from '../components/footer'
 
 
  const home = () => {
@@ -20,6 +21,7 @@ import ContactUsForm from '../components/contactUsForm'
     <OurVenue />
     <Testimonial />
     <ContactUsForm />
+    <Footer />
  
     </>
 
