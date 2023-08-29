@@ -5,7 +5,7 @@ const Advertisement = () => {
   return (
     <div>
         {AdvertisementList.map((ad)=>{
-           return <div className=' mx-20 grid grid-cols-3 rounded-2xl bg-gradient-to-r from-sky-700 to-gray-300'>
+           return <div className=' shadow-xl shadow-sky-300 mx-20 grid grid-cols-3 rounded-2xl bg-gradient-to-r from-sky-700 to-gray-300'>
             <div className='col-span-2 flex flex-col p-10 w-full justify-evenly'>
                 <h1 className='text-3xl font-semibold text-white'>{ad.title}</h1>
                 <h1 className='text-lg text-yellow-400 font-semibold'>{ad.miniTitle}</h1>

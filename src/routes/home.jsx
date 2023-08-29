@@ -6,6 +6,7 @@ import Advertisment from '../components/advertisement'
 import BreakBanner from '../components/break-banner'
 import OurVenue from '../components/ourVenue'
 import Testimonial from '../components/testimonial'
+import ContactUsForm from '../components/contactUsForm'
 
 
  const home = () => {
@@ -18,6 +19,7 @@ import Testimonial from '../components/testimonial'
     <BreakBanner />
     <OurVenue />
     <Testimonial />
+    <ContactUsForm />
  
     </>
 

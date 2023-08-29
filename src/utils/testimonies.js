@@ -12,7 +12,7 @@ export const Testimonies =[
 
     },
     {
-        name :"Me Addisu Wesen",
+        name :"Mr Addisu Wesen",
         position : "General Manager, The Emeye Minilk Subcity",
         fullText : "On behalf of the Emye Minilik Sub City adminstration office, I would like to thank you for coming all the way from Addis Ababa, at such dificult times to show how much you care for our displaced families Most importantly, you hae shared them your great love and hope!"
 
