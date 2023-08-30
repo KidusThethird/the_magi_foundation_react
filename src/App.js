@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Home from './routes/home';
 import Navbar from './components/commonComponents/nav-bar';
+import OurStory from './routes/ourStory';
 
 
 
@@ -15,6 +16,7 @@ function App() {
   <Navbar />
   <Routes>
     <Route path='/' element={<Home />}/>
+    <Route path='/ourstory' element={<OurStory />}/>
   </Routes>
 </Router>
 

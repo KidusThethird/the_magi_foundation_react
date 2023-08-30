@@ -1,9 +1,12 @@
 import React from 'react'
+import Hero from '../components/ourStoryComponents/hero'
 
-const ourStory = () => {
+const OurStory = () => {
   return (
-    <div>ourStory</div>
+  <div className='pt-16'>
+    <Hero />
+    </div>
   )
 }
 
-export default ourStory
+export default OurStory

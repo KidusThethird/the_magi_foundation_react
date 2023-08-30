@@ -12,12 +12,12 @@ const Navbar = () => {
 </div>
 
 <div className='space-x-10 my-auto  flex'>
-<a href="">Home</a>
+<a href="/">Home</a>
 <div className="group relative ">
-            <a href="">About</a>
+            <h1 className='cursor-pointer'>About</h1>
             <div className="hidden group-hover:block absolute w-32  left-0 z-50">
               <div className="flex flex-col px-4 py-1 space-y-2 w-full  bg-blue-900 rounded-b-2xl">
-                <a className="text-left " href="">Our Story</a>
+                <a className="text-left " href="/ourstory">Our Story</a>
                 <a className="text-left" href="">Our Team</a>
               </div>
             </div>
@@ -26,7 +26,7 @@ const Navbar = () => {
 <a href="">Events</a>
 
 <div className='group relative'>
-  <a href="">Gallery</a>
+  <h1 className='cursor-pointer'>Gallery</h1>
   <div className="hidden group-hover:block absolute w-32  left-0 z-50">
               <div className="flex flex-col px-4 py-1 space-y-2 w-full  bg-blue-900 rounded-b-2xl">
                 <a className="text-left" href="">School</a>
