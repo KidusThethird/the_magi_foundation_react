@@ -18,7 +18,7 @@ const Navbar = () => {
             <div className="hidden group-hover:block absolute w-32  left-0 z-50">
               <div className="flex flex-col px-4 py-1 space-y-2 w-full  bg-blue-900 rounded-b-2xl">
                 <a className="text-left " href="/ourstory">Our Story</a>
-                <a className="text-left" href="">Our Team</a>
+                <a className="text-left" href="/ourteam">Our Team</a>
               </div>
             </div>
           </div>
