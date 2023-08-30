@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {  Pagination , Navigation ,  Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css';
-import {BlogList} from '../utils/blogs'
+import {BlogList} from '../../utils/blogs'
 import 'swiper/css/pagination';
 
 

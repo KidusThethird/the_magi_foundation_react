@@ -1,5 +1,6 @@
 import React from 'react';
-import CoverImage from '../assets/images/banner/themagicover.jpeg'
+
+import CoverImage from '../../assets/images/banner/themagicover.jpeg'
 
 const BreakBanner = () => {
   return (

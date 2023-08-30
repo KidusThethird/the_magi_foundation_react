@@ -2,7 +2,7 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {  Pagination , Navigation ,  Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css';
-import {Testimonies} from '../utils/testimonies'
+import {Testimonies} from '../../utils/testimonies'
 import 'swiper/css/pagination';
 import {Quotes  } from "@phosphor-icons/react";
 

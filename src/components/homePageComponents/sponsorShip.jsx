@@ -1,5 +1,5 @@
 import React from 'react';
-import {KidsList} from '../utils/kidsToSponsor'
+import {KidsList} from '../../utils/kidsToSponsor'
 
 const SponsorShip = () => {
   return (

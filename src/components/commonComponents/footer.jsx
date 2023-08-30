@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../assets/images/logo/themagilogo1.png'
+import Logo from '../../assets/images/logo/themagilogo1.png'
 
 const Footer = () => {
   return (

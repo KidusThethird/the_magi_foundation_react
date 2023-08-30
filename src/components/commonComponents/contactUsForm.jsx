@@ -1,5 +1,5 @@
 import React from 'react'
-import CoverImage from '../assets/images/banner/magi_banner_03.jpg'
+import CoverImage from '../../assets/images/banner/magi_banner_03.jpg'
 
 function ContactUsForm() {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
-import HeroImage1 from '../assets/images/banner/magi_banner_01.jpg';
-import HeroImage2 from '../assets/images/banner/magi_banner_02.jpg';
-import HeroImage3 from '../assets/images/banner/magi_banner_04.jpg';
+import HeroImage1 from '../../assets/images/banner/magi_banner_01.jpg';
+import HeroImage2 from '../../assets/images/banner/magi_banner_02.jpg';
+import HeroImage3 from '../../assets/images/banner/magi_banner_04.jpg';
 import {CaretDown  } from "@phosphor-icons/react";
 
 const Hero = () => {

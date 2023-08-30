@@ -1,5 +1,5 @@
 import React from 'react';
-import {AdvertisementList} from '../utils/advertisement'
+import {AdvertisementList} from '../../utils/advertisement'
 
 const Advertisement = () => {
   return (
