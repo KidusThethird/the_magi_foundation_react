@@ -11,7 +11,7 @@ const OurStory = () => {
   <div className='pt-16'>
     <Hero />
     <VisonAndMission />
-    <Footer />
+
     </div>
   )
 }

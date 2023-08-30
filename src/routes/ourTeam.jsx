@@ -5,7 +5,6 @@ const OurTeam = () => {
   return (
     <div>
 <TeamList />
-<Footer />
 
     </div>
   )

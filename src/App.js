@@ -6,6 +6,8 @@ import Home from './routes/home';
 import Navbar from './components/commonComponents/nav-bar';
 import OurStory from './routes/ourStory';
 import OurTeam from './routes/ourTeam';
+import Events from './routes/events';
+import Footer from './components/commonComponents/footer';
 
 
 
@@ -19,7 +21,15 @@ function App() {
     <Route path='/' element={<Home />}/>
     <Route path='/ourstory' element={<OurStory />}/>
     <Route path='/ourteam' element={<OurTeam />}/>
+    <Route path='/events' element={<Events />}/>
   </Routes>
+
+
+
+{/*  
+  <Footer />
+*/}
+
 </Router>
 
   );

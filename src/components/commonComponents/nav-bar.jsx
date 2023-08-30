@@ -23,7 +23,7 @@ const Navbar = () => {
             </div>
           </div>
 
-<a href="">Events</a>
+<a href="/events">Events</a>
 
 <div className='group relative'>
   <h1 className='cursor-pointer'>Gallery</h1>
