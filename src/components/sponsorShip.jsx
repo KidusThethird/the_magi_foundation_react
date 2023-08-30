@@ -12,7 +12,7 @@ const SponsorShip = () => {
 <div className='grid grid-cols-4 gap-10 px-3'>
 
 {KidsList.map((kid)=>{
-    return(<div className='relative shadow-2xl hover:shadow-sky-700 rounded-b-3xl overflow-hidden'>
+    return kid.displayOnHome&& (<div className='relative shadow-2xl hover:shadow-sky-700 rounded-b-3xl overflow-hidden'>
         <div  className='rounded-t-3xl  overflow-hidden'>
     <img src={kid.image} className='rounded-b-3xl hover:scale-110 overflow-hidden transition-all duration-500' alt="" />
     </div>
