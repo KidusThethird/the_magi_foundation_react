@@ -8,10 +8,15 @@ import OurStory from './routes/ourStory';
 import OurTeam from './routes/ourTeam';
 import Events from './routes/events';
 import Footer from './components/commonComponents/footer';
+import EventDetails from './components/eventComponents/eventDetails';
+import { useState } from 'react';
 
 
 
 function App() {
+
+const [eventIndex, setEventIndex] = useState("001");
+
   return (
   
 
@@ -21,7 +26,8 @@ function App() {
     <Route path='/' element={<Home />}/>
     <Route path='/ourstory' element={<OurStory />}/>
     <Route path='/ourteam' element={<OurTeam />}/>
-    <Route path='/events' element={<Events />}/>
+    <Route path='/events' element={<Events  setEventIndex={setEventIndex}/>}/>
+    <Route path='/eventdetails' element={<EventDetails  eventIndex={eventIndex} />} />
   </Routes>
 
 
