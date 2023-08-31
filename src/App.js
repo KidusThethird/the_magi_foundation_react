@@ -10,6 +10,7 @@ import Events from './routes/events';
 import Footer from './components/commonComponents/footer';
 import EventDetails from './components/eventComponents/eventDetails';
 import { useState } from 'react';
+import Gallery from './routes/gallery';
 
 
 
@@ -28,6 +29,7 @@ const [eventIndex, setEventIndex] = useState("001");
     <Route path='/ourteam' element={<OurTeam />}/>
     <Route path='/events' element={<Events  setEventIndex={setEventIndex}/>}/>
     <Route path='/eventdetails' element={<EventDetails  eventIndex={eventIndex} />} />
+    <Route path='/gallery' element={<Gallery />} />
   </Routes>
 
 
