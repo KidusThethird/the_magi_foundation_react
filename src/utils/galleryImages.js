@@ -31,155 +31,155 @@ import otherImage1 from '../assets/images/gallery/other/img1.jpg'
 
 
 export const GalleryImages = [
-    {
-        id: "001",
+    
+      {
+        id: "0",
         imageName: "debrebrhanImage1",
         src: debrebrhanImage1,
         category: "debrebrhan"
       },
       {
-        id: "002",
+        id: "1",
         imageName: "debrebrhanImage2",
         src: debrebrhanImage2,
         category: "debrebrhan"
       },
       {
-        id: "003",
+        id: "2",
         imageName: "debrebrhanImage3",
         src: debrebrhanImage3,
         category: "debrebrhan"
       },
       {
-        id: "004",
+        id: "3",
         imageName: "debrebrhanImage4",
         src: debrebrhanImage4,
         category: "debrebrhan"
       },
       {
-        id: "005",
+        id: "4",
         imageName: "debrebrhanImage5",
         src: debrebrhanImage5,
         category: "debrebrhan"
       },
       {
-        id: "006",
+        id: "5",
         imageName: "debrebrhanImage6",
         src: debrebrhanImage6,
         category: "debrebrhan"
       },
       {
-        id: "007",
+        id: "6",
         imageName: "debrebrhanImage7",
         src: debrebrhanImage7,
         category: "debrebrhan"
       },
       {
-        id: "008",
+        id: "7",
         imageName: "debrebrhanImage8",
         src: debrebrhanImage8,
         category: "debrebrhan"
       },
       {
-        id: "009",
+        id: "8",
         imageName: "debrebrhanImage9",
         src: debrebrhanImage9,
         category: "debrebrhan"
       },
       {
-        id: "010",
+        id: "9",
         imageName: "debrebrhanImage10",
         src: debrebrhanImage10,
         category: "debrebrhan"
       },
       {
-        id: "011",
+        id: "10",
         imageName: "debrebrhanImage11",
         src: debrebrhanImage11,
         category: "debrebrhan"
       },
       {
-        id: "012",
+        id: "11",
         imageName: "debrebrhanImage12",
         src: debrebrhanImage12,
         category: "debrebrhan"
       },
       {
-        id: "013",
+        id: "12",
         imageName: "debrebrhanImage13",
         src: debrebrhanImage13,
         category: "debrebrhan"
       },
       {
-        id: "014",
+        id: "13",
         imageName: "schoolImage1",
         src: schoolImage1,
         category: "school"
       },
       {
-        id: "015",
+        id: "14",
         imageName: "schoolImage2",
         src: schoolImage2,
         category: "school"
       },
       {
-        id: "016",
+        id: "15",
         imageName: "schoolImage3",
         src: schoolImage3,
         category: "school"
       },
       {
-        id: "017",
+        id: "16",
         imageName: "schoolImage4",
         src: schoolImage4,
         category: "school"
       },
       {
-        id: "018",
+        id: "17",
         imageName: "schoolImage5",
         src: schoolImage5,
         category: "school"
       },
       {
-        id: "019",
+        id: "18",
         imageName: "schoolImage6",
         src: schoolImage6,
         category: "school"
       },
       {
-        id: "020",
+        id: "19",
         imageName: "schoolImage7",
         src: schoolImage7,
         category: "school"
       },
       {
-        id: "021",
+        id: "20",
         imageName: "schoolImage8",
         src: schoolImage8,
         category: "school"
       },
       {
-        id: "022",
+        id: "21",
         imageName: "schoolImage9",
         src: schoolImage9,
         category: "school"
       },
       {
-        id: "023",
+        id: "22",
         imageName: "schoolImage10",
         src: schoolImage10,
         category: "school"
       },
       {
-        id: "024",
+        id: "23",
         imageName: "schoolImage11",
         src: schoolImage11,
         category: "school"
       },
       {
-        id: "025",
+        id: "24",
         imageName: "otherImage1",
         src: otherImage1,
         category: "other"
-
       }
 ]
