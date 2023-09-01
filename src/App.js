@@ -17,19 +17,21 @@ import Gallery from './routes/gallery';
 function App() {
 
 const [eventIndex, setEventIndex] = useState("001");
+//image category Selection
+const [categorySelected , setCategorySelected] = useState("all");
 
   return (
   
 
 <Router>
-  <Navbar />
+  <Navbar setCategorySelected={setCategorySelected}/>
   <Routes>
     <Route path='/' element={<Home />}/>
     <Route path='/ourstory' element={<OurStory />}/>
     <Route path='/ourteam' element={<OurTeam />}/>
     <Route path='/events' element={<Events  setEventIndex={setEventIndex}/>}/>
     <Route path='/eventdetails' element={<EventDetails  eventIndex={eventIndex} />} />
-    <Route path='/gallery' element={<Gallery />} />
+    <Route path='/gallery' element={<Gallery categorySelected={categorySelected} setCategorySelected={setCategorySelected}/>} />
   </Routes>
 
 

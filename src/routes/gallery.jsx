@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 import {GalleryImages} from '../utils/galleryImages';
 
-const Gallery = () => {
+const Gallery = (props) => {
 
-   const [categorySelected , setCategorySelected] = useState("all");
+  const categorySelected = props.categorySelected;
+  const setCategorySelected = props.setCategorySelected;
    const [activeImage , setActiveImage] = useState ("0");
    const [viewImage, setViewImage] = useState(false);
 
@@ -21,6 +22,8 @@ const Gallery = () => {
     setViewImage(true);
     
    }
+
+
    const closeImageViwer=() =>{
     setViewImage(false);
    }
@@ -28,7 +31,6 @@ const Gallery = () => {
    const nextImageShow=() =>{
 if(activeImage < lengthofImageArray){
   setActiveImage(parseInt(activeImage) +1);
-
 }
 
    }
@@ -39,15 +41,15 @@ if(activeImage >0){
    }
 
    
-   console.log("Active image "+activeImage);
+ 
   return (
 <>
 {viewImage && <div className='pt-16 fixed  w-full h-full  bg-sky-700 bg-opacity-60  flex justify-center align-middle overflow-hidden z-40'>
-        <div className='w-full absolute   flex pt-16'>
-          <button onClick={()=>closeImageViwer()} className='absolute right-0  mr-10 text-xl text-white bg-gray-800 px-3 pb-1 rounded-full'>x</button>
+        <div className='w-full absolute   flex  pt-5'>
+          <button onClick={()=>closeImageViwer()} className='absolute right-0 mr-3 mt-3  md:mr-10 text-xl text-white bg-gray-800 px-3 pb-1 rounded-full'>x</button>
         </div>
-        <button onClick={()=>pervImageShow()} className='ml-10 h-fit my-auto text-center text-3xl justify-center  px-2 rounded pb-1 bg-gray-800 text-white'>{"<"}</button>
-            <img className='w-5/6 my-auto mx-auto px-5' src={GalleryImages[activeImage].src} alt="" />
+        <button onClick={()=>pervImageShow()} className=' ml-10 h-fit my-auto text-center text-3xl justify-center  px-2 rounded pb-1 bg-gray-800 text-white'>{"<"}</button>
+            <img className='w-5/6 lg:w-fit object-cover  px-5' src={GalleryImages[activeImage].src} alt="" />
             <button onClick={()=>nextImageShow()} className='mr-10 h-fit my-auto text-center text-3xl pb-1 px-2 rounded bg-gray-800 text-white'>{">"}</button>
             
         </div>}

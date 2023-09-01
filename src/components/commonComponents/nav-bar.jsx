@@ -1,7 +1,11 @@
 import React from 'react';
-import Logo from '../../assets/images/logo/themagilogo1.png'
+import Logo from '../../assets/images/logo/themagilogo1.png';
+import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = (props) => {
+
+ const setCategorySelected = props.setCategorySelected;
+
   return (
     <div className='fixed z-50 w-full '>
     <div className='flex justify-around bg-blue-900 text-white py-3  '>
@@ -30,9 +34,11 @@ const Navbar = () => {
   <div className="hidden group-hover:block absolute w-32  left-0 z-50">
               <div className="flex flex-col px-4 py-1 space-y-2 w-full  bg-blue-900 rounded-b-2xl">
                 <a href="/gallery">All</a>
-                <a className="text-left" href="">School</a>
-                <a className="text-left" href="">Debrebrhan</a>
-                <a className="text-left" href="">Other</a>
+             
+                <Link to="/gallery" onClick={() => setCategorySelected("school")}>School</Link>
+                <Link to="/gallery" onClick={() => setCategorySelected("debrebrhan")}>Debrebrhan</Link>
+                <Link to="/gallery" onClick={() => setCategorySelected("other")}>Other</Link>
+              
               </div>
             </div>
 </div>
