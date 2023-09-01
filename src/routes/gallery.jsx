@@ -52,6 +52,7 @@ if(activeImage >0){
             <img className='w-5/6 lg:w-fit object-cover  px-5' src={GalleryImages[activeImage].src} alt="" />
             <button onClick={()=>nextImageShow()} className='mr-10 h-fit my-auto text-center text-3xl pb-1 px-2 rounded bg-gray-800 text-white'>{">"}</button>
             
+            
         </div>}
            <div className='pt-20  '>
 
