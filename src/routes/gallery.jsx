@@ -2,7 +2,26 @@ import React, { useState } from 'react';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 import {GalleryImages} from '../utils/galleryImages';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import {  Pagination , Navigation ,  Scrollbar, A11y } from 'swiper/modules';
+import 'swiper/css';
+
+
+
 const Gallery = (props) => {
+
+  const breakpoints = {
+    935: {
+      slidesPerView: 3,
+    },
+    746: {
+      slidesPerView: 3,
+    },
+    550: {
+      slidesPerView: 2,
+    },
+  
+  };
 
   const categorySelected = props.categorySelected;
   const setCategorySelected = props.setCategorySelected;
@@ -45,14 +64,34 @@ if(activeImage >0){
   return (
 <>
 {viewImage && <div className='pt-16 fixed  w-full h-full  bg-sky-700 bg-opacity-60  flex justify-center align-middle overflow-hidden z-40'>
-        <div className='w-full absolute   flex  pt-5'>
-          <button onClick={()=>closeImageViwer()} className='absolute right-0 mr-3 mt-3  md:mr-10 text-xl text-white bg-gray-800 px-3 pb-1 rounded-full'>x</button>
+       
+
+
+<Swiper
+    
+    modules={[Navigation, Pagination, Scrollbar, A11y]}
+     pagination={{ clickable: true }}
+     spaceBetween={30}
+      breakpoints={1}
+     initialSlide={activeImage}
+    >
+{GalleryImages.map((image) => {
+ 
+    return (
+      <SwiperSlide>
+        <div className='w-full flex '>  
+          <button onClick={()=>closeImageViwer()} className='absolute right-0 rounded text-xl text-sky-300 bg-gray-700 px-3 pb-1 mt-10 mr-5'>x</button>
         </div>
-        <button onClick={()=>pervImageShow()} className=' ml-10 h-fit my-auto text-center text-3xl justify-center  px-2 rounded pb-1 bg-gray-800 text-white'>{"<"}</button>
-            <img className='w-5/6 lg:w-fit object-cover  px-5' src={GalleryImages[activeImage].src} alt="" />
-            <button onClick={()=>nextImageShow()} className='mr-10 h-fit my-auto text-center text-3xl pb-1 px-2 rounded bg-gray-800 text-white'>{">"}</button>
-            
-            
+     <div className="flex items-center justify-center h-screen">
+  <img src={image.src} className="max-h-full max-w-full object-contain" alt="" />
+    </div>
+      </SwiperSlide>
+    );
+  
+})}
+        
+ </Swiper> 
+
         </div>}
            <div className='pt-20  '>
 
