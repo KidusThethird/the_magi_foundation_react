@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 import {GalleryImages} from '../utils/galleryImages';
 
 const Gallery = () => {
 
-   
+   const [categorySelected , setCategorySelected] = useState("all");
+
+   const changeSeclectedCategory=( selected )=>{
+ 
+    setCategorySelected(selected);
+
+   }
   
   return (
 
@@ -15,10 +21,10 @@ const Gallery = () => {
             <h1 className='text-sky-700 underline'>lery</h1>
         </div>
         <div className='w-fit mx-auto space-x-3 text-gray-300 pb-3'>
-            <button className='bg-sky-700 px-3 py-1 rounded-xl'>All</button>
-            <button className='bg-sky-700 px-3 py-1 rounded-xl'>Debrebrhan</button>
-            <button className='bg-sky-700 px-3 py-1 rounded-xl'>School</button>
-            <button className='bg-sky-700 px-3 py-1 rounded-xl'>Other</button>
+            <button onClick={()=>changeSeclectedCategory('all')} className='bg-sky-700 px-3 py-1 rounded-xl'>All</button>
+            <button onClick={()=>changeSeclectedCategory('debrebrhan')}  className='bg-sky-700 px-3 py-1 rounded-xl'>Debrebrhan</button>
+            <button onClick={()=>changeSeclectedCategory('school')}  className='bg-sky-700 px-3 py-1 rounded-xl'>School</button>
+            <button onClick={()=>changeSeclectedCategory('other')}  className='bg-sky-700 px-3 py-1 rounded-xl'>Other</button>
         </div>
 
 <ResponsiveMasonry
@@ -27,7 +33,8 @@ const Gallery = () => {
                 <Masonry>
 
                 {GalleryImages
-  //.filter((image) => image.type === 't1')
+               
+  .filter((image) => categorySelected=="all" || image.category === categorySelected )
   .map((image) => (
     <img src={image.src} alt="" className="px-2 py-2" />
   ))}

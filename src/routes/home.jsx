@@ -7,7 +7,7 @@ import BreakBanner from '../components/homePageComponents/break-banner'
 import OurVenue from '../components/homePageComponents/ourVenue'
 import Testimonial from '../components/homePageComponents/testimonial'
 import ContactUsForm from '../components/commonComponents/contactUsForm'
-import Footer from '../components/commonComponents/footer'
+
 import SponsorShip from '../components/homePageComponents/sponsorShip'
 
 
@@ -23,7 +23,7 @@ import SponsorShip from '../components/homePageComponents/sponsorShip'
     <OurVenue />
     <Testimonial />
     <ContactUsForm />
-    <Footer />
+   
  
     </>
 
