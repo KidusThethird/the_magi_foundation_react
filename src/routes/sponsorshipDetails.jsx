@@ -6,9 +6,9 @@ const SponsorshipDetails = (props) => {
   const sponsorShipIndex = props.sponsorShipIndex;
 
   return (
-    <div className='pt-20'>
+    <div className='pt-10'>
 
-      <div className=' grid grid-cols-2  bg-gradient-to-r from-blue-500 to-purple-500'>
+      <div className='py-10 grid grid-cols-2  bg-gradient-to-r from-blue-500 to-purple-500'>
 
         <div className='mx-auto py-5 px-5'>
           <img className='w-3/4 rounded-2xl shadow-2xl' src={KidsList[sponsorShipIndex].image} alt="" />

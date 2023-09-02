@@ -15,6 +15,7 @@ import SponsorShip from './routes/sponsorShip';
 import SponsorshipDetails from './routes/sponsorshipDetails';
 import Blogs from './routes/blogs';
 import BlogDetails from './routes/blogDetails';
+import Contact from './routes/contact';
 
 
 
@@ -45,14 +46,15 @@ const [categorySelected , setCategorySelected] = useState("all");
    <Route path='/sponsorshipdetails' element={<SponsorshipDetails sponsorShipIndex={sponsorShipIndex} />}/>
    <Route path='/blogs' element={<Blogs setBlogIndex={setBlogIndex}/>} />
    <Route path='/blogdetails' element={<BlogDetails blogIndex={blogIndex}/>} />
+   <Route path='/contact' element={<Contact/>} />
    
   </Routes>
 
 
 
-{/*  
+
   <Footer />
-*/}
+
 
 </Router>
 

@@ -42,7 +42,7 @@ const EventDetails = (props) => {
 
 
 return (
-    <div className='pt-32'>
+    <div className='py-24'>
 
         <div className='grid grid-cols-2 py-5 mx-10 bg-gradient-to-r from-sky-700 to-purple-500 rounded'>
 
