@@ -4,9 +4,16 @@ import {  Pagination , Navigation ,  Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css';
 import {BlogList} from '../../utils/blogs'
 import 'swiper/css/pagination';
+import { Link } from "react-router-dom";
 
 
-const Blog = () => {
+const Blog = (props) => {
+
+  const setBlogIndex =props.setBlogIndex;
+
+  const changeBlogIndex=(index)=>{
+    setBlogIndex(index);
+  }
 
     const breakpoints = {
         935: {
@@ -21,10 +28,12 @@ const Blog = () => {
       
       };
 
-    return <div className=" px-10">
-        <div>
-            <h1 className="text-4xl font-semibold text-gray-700 text-center pb-10">Blogs</h1>
-        </div>
+    return <div className=" px-10 mb-10">
+        <div className='w-full flex'>
+<div className='flex mx-auto pb-9 text-4xl font-semibold'>
+    <h1 className='text-gray-700'>Bl</h1><h1 className='text-sky-700 underline'>ogs</h1>
+    </div>
+    </div>
 
 
         <div>
@@ -51,21 +60,19 @@ const Blog = () => {
   if (blog.displayOnHomePage) {
     return (
       <SwiperSlide>
-        <div className="mx-1 pb-4 mb-8   px-3 pt-3 rounded-lg border-opacity-20 rounded-t-3xl border-sky-700 bg-gradient-to-t from-blue-200 to-white">
-          <div className="w-full    overflow-hidden">
-            <img className="mx-auto rounded-xl" src={blog.image} alt="" />
-          </div>
-          <div className="w-full space-y-5 pt-4 px-5  ">
-            <h1 className="text-xl text-center mx-auto text-sky-700">
-              Topic: {blog.topic}
-            </h1>
-            <h1 className="text-lg">Genre: {blog.genre}</h1>
-            <p>{blog.highlight}</p>
-            <button className="text-white bg-sky-700 rounded-full px-3 py-1">
-              Read More
-            </button>
-          </div>
+        <div className='cursor-pointer mb-10 bg-gradient-to-r from-blue-500 to-sky-400 text-white space-y-3 rounded-xl overflow-hidden'>
+        <img src={blog.image} alt="" />
+        <div className='p-4 space-y-3'>
+        <h1>Title: {blog.topic}</h1>
+        <h1>Genre: {blog.genre}</h1>
+        <div className=''>
+            <Link to="/blogdetails">
+            <button onClick={()=>changeBlogIndex(blog.id)}  className='bg-sky-700 px-3 py-1 rounded-xl'>Read</button>
+            </Link>
+       
         </div>
+        </div>
+    </div>
       </SwiperSlide>
     );
   } else {

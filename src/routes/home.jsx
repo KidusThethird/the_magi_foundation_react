@@ -11,12 +11,13 @@ import ContactUsForm from '../components/commonComponents/contactUsForm'
 import SponsorShipSample from '../components/homePageComponents/sponsorShipsample'
 
 
- const home = () => {
+ const home = (props) => {
+  const setBlogIndex = props.setBlogIndex;
   return (
     <>
     <Hero />
     <About />
-    <Blog />
+    <Blog setBlogIndex={setBlogIndex}/>
     <Advertisment />
     <BreakBanner />
     <SponsorShipSample />

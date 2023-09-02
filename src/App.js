@@ -34,12 +34,13 @@ const [categorySelected , setCategorySelected] = useState("all");
 <Router>
   <Navbar setCategorySelected={setCategorySelected}/>
   <Routes>
-    <Route path='/' element={<Home />}/>
-    <Route path='/ourstory' element={<OurStory />}/>
-    <Route path='/ourteam' element={<OurTeam />}/>
-    <Route path='/events' element={<Events  setEventIndex={setEventIndex}/>}/>
-    <Route path='/eventdetails' element={<EventDetails  eventIndex={eventIndex} />} />
-    <Route path='/gallery' element={<Gallery categorySelected={categorySelected} setCategorySelected={setCategorySelected}/>} />
+   
+   <Route path='/' element={<Home setBlogIndex={setBlogIndex}/>}/>
+   <Route path='/ourstory' element={<OurStory />}/>
+   <Route path='/ourteam' element={<OurTeam />}/>
+   <Route path='/events' element={<Events  setEventIndex={setEventIndex}/>}/>
+   <Route path='/eventdetails' element={<EventDetails  eventIndex={eventIndex} />} />
+   <Route path='/gallery' element={<Gallery categorySelected={categorySelected} setCategorySelected={setCategorySelected}/>} />
    <Route path='/sponsorship' element={<SponsorShip   setSponsorShipIndex={setSponsorShipIndex}/>}/>
    <Route path='/sponsorshipdetails' element={<SponsorshipDetails sponsorShipIndex={sponsorShipIndex} />}/>
    <Route path='/blogs' element={<Blogs setBlogIndex={setBlogIndex}/>} />

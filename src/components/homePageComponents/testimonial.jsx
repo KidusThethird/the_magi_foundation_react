@@ -52,12 +52,12 @@ const Testimonial = () => {
     return (
       <SwiperSlide>
         <div className='p-2 pb-8 h-full cursor-pointer '>
-<div className='bg-gray-300 p-2 rounded-2xl my-auto shadow-xl shadow-sky-300'>
+<div className='text-white bg-gradient-to-r from-blue-500 to-sky-700 p-2 rounded-2xl my-auto shadow-xl shadow-sky-300'>
     <div className='pb-4'>
-    <h1 className=' text-lg text-sky-700 text-center'><Quotes /> {testimony.fullText}<Quotes className='right-0 flex w-full' />  </h1>
+    <h1 className=' text-lg  text-center'><Quotes /> {testimony.fullText}<Quotes className='right-0 flex w-full' />  </h1>
     </div>
-    <h1 className='text-xl text-gray-700 font-semibold text-center'>{testimony.name}</h1>
-    <h1 className='text-1g text-blue-700 text-center'>{testimony.position}</h1>
+    <h1 className='text-xl  font-semibold text-center'>{testimony.name}</h1>
+    <h1 className='text-1g text-center'>{testimony.position}</h1>
 </div>
 
 
