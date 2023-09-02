@@ -1,7 +1,7 @@
 import React from 'react';
 import {KidsList} from '../../utils/kidsToSponsor'
 
-const SponsorShip = () => {
+const SponsorShipSample = () => {
   return (
     <div>
 <div className='flex text-5xl font-semibold'>
@@ -38,4 +38,4 @@ const SponsorShip = () => {
   )
 }
 
-export default SponsorShip
+export default SponsorShipSample

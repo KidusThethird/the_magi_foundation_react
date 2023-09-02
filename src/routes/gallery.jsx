@@ -10,18 +10,6 @@ import 'swiper/css';
 
 const Gallery = (props) => {
 
-  const breakpoints = {
-    935: {
-      slidesPerView: 3,
-    },
-    746: {
-      slidesPerView: 3,
-    },
-    550: {
-      slidesPerView: 2,
-    },
-  
-  };
 
   const categorySelected = props.categorySelected;
   const setCategorySelected = props.setCategorySelected;
@@ -83,7 +71,7 @@ if(activeImage >0){
           <button onClick={()=>closeImageViwer()} className='absolute right-0 rounded text-xl text-sky-300 bg-gray-700 px-3 pb-1 mt-10 mr-5'>x</button>
         </div>
      <div className="flex items-center justify-center h-screen">
-  <img src={image.src} className="max-h-full max-w-full object-contain" alt="" />
+  <img src={image.src} className="max-h-full max-w-full object-contain cursor-pointer" alt="" />
     </div>
       </SwiperSlide>
     );
