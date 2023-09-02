@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { EventsList } from '../utils/events';
-import EventDetails from '../components/eventComponents/eventDetails';
+import EventDetails from './eventDetails';
 
 const Events = (props) => {
 

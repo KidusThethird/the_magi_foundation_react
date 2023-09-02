@@ -1,6 +1,6 @@
 
 import React from 'react'
-import {KidsList} from '../../utils/kidsToSponsor'
+import {KidsList} from '../utils/kidsToSponsor'
 const SponsorshipDetails = (props) => {
 
   const sponsorShipIndex = props.sponsorShipIndex;

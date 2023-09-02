@@ -7,6 +7,7 @@ import BlogImage5 from '../assets/images/blog/blog5.jpg';
 
 export const BlogList = [
     {
+        id: '0',
      topic: "THE MAGI children support through their family",
      genre : "Children Support",
      highlight: "Many households in Ethiopia have faced hardships as a result of the conflict and the economic crisis. THE MAGI starts its first...",
@@ -15,6 +16,7 @@ export const BlogList = [
      displayOnHomePage: true,
     },
     {
+        id: '1',
         topic: "Meet 8 and 10 year old and brother and sister",
         genre : "Children Support",
         highlight: "Meet 8 and 10 year old and brother and sister, Sumeya Abdulkerim and Rahamat Abdulkerim. They are students...",
@@ -23,6 +25,7 @@ export const BlogList = [
         displayOnHomePage: true,
        },
        {
+        id: '2',
         topic: "School material assistance",
         genre : "Educational support",
         highlight: "Currently, quite significant number of families are unable to enroll their school age children in Ethiopia, due to luck of peace...",
@@ -31,6 +34,7 @@ export const BlogList = [
         displayOnHomePage: true,
        },
        {
+        id: '3',
         topic: "Loving the unloved",
         genre : "Street children",
         highlight: "Street children are boys and girls for whom streets have become home. While some are orphans, many have families but grew up...",
@@ -39,6 +43,7 @@ export const BlogList = [
         displayOnHomePage: true,
        },
        {
+        id: '4',
         topic: "Children of Brave Woman from the Streets of Ethiopia",
         genre : "Life support",
         highlight: "Meet brother and sister Huziefa Abdulehadid and Enib Abdulehadid, children of the brave woman Jemil...",
