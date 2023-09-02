@@ -6,7 +6,7 @@ const Navbar = (props) => {
 
  const setCategorySelected = props.setCategorySelected;
 
- const [dropDownList, setDropDownList] =useState(true);
+ const [dropDownList, setDropDownList] =useState(false);
  const [aboutList, setAboutList] = useState(false);
  const [galleryList, setGalleryList] = useState(false);
 
@@ -83,7 +83,7 @@ const Navbar = (props) => {
   
 {dropDownList &&
   <div className='w-full flex relative  '>
-    <div className='overflow-y-auto max-h-[500px] scroll-auto  absolute right-0 rounded-bl-2xl shadow-2xl shadow-blue-700 bg-blue-900 bg-opacity-90 text-white w-1/3 flex flex-col text-left pl-7 space-y-5 py-5'>
+    <div className='w-1/2  smd:w-1/3 overflow-y-auto max-h-[500px] scroll-auto  absolute right-0 rounded-bl-2xl shadow-2xl shadow-blue-700 bg-blue-900 bg-opacity-90 text-white  flex flex-col text-left pl-7 space-y-5 py-5'>
     <a href="/">Home</a>
     <div onClick={()=>toggleAboutList()} className='flex  space-x-2'>
     <a href="">About</a>
