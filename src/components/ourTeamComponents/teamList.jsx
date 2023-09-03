@@ -10,14 +10,14 @@ const TeamList = () => {
             <h1 className='text-sky-700 underline'>Team</h1>
         </div>
 
-<div className='py-16 px-20'>
+<div className='py-16 px-2 md:px-20'>
 
 {TeamMembers.map((member)=>{
     
-   return <div className='grid grid-cols-3 w-full  bg-sky-700 mb-6 text-gray-200 rounded-3xl shadow-lg shadow-sky-400'>
-    <div className=' col-span-1 '>
-        <div className='pt-10 pb-3 px-10  w-3/4 mx-auto'>
-    <img className=' shadow-2xl shadow-black rounded-lg' src={member.image} alt="" />
+   return <div className=' slg:grid grid-cols-3 w-full  bg-sky-700 mb-6 text-gray-200 rounded-3xl shadow-lg shadow-sky-400'>
+    <div className='col-span-1  '>
+        <div className='w-3/4 sm:w-1/2 pt-10 pb-3 px-10 slg:w-3/4 mx-auto'>
+    <img className=' md:w-full shadow-2xl shadow-black rounded-lg' src={member.image} alt="" />
     </div>
     <h1 className='text-center pb-5 ' >{member.name}</h1>
     </div>
