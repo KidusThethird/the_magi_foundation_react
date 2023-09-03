@@ -10,12 +10,12 @@ function ContactUsForm() {
          backgroundAttachment: 'fixed' }}
          
          className='flex'>
-     <div className='mx-auto py-20'>
+     <div className='w-4/5  md:w-fit mx-auto py-20'>
         <div className='bg-blue-950 text-white flex rounded-t-3xl'>
             <h1 className='mx-auto py-6 text-3xl font-semibold'>Contact Us</h1></div>
-        <div className='px-10 bg bg-gray-300 rounded-b-2xl shadow-lg shadow-sky-600'>
+        <div className='md:px-2 px-10 bg bg-gray-300 rounded-b-2xl shadow-lg shadow-sky-600'>
             <form action="">
-            <div className="space-x-20 py-5">
+            <div className=" md:px-0 md:space-x-5 space-y-3 md:space-y-0 flex flex-col md:flex-row slg:space-x-20 py-5">
                 <input className='p-3 rounded-lg focus:outline-sky-500' type="text" placeholder='Name' />
                 <input className='p-3 rounded-lg focus:outline-sky-500' type="text" placeholder='Email'/>
                 <input className='p-3 rounded-lg focus:outline-sky-500' type="text" placeholder='Subject'/>
