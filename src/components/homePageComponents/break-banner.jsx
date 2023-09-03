@@ -13,12 +13,12 @@ const BreakBanner = () => {
         
 
 <div className="  py-20 md:py-32 w-full pl-0 md:pl-11 slg:pl-0">
-   <div className='mx-auto w-fit   flex text-5xl md:text-4xl slg:text-5xl font-bold space-x-5  '>
+   <div className='mx-auto w-fit   flex   text-4xl slg:text-5xl font-bold space-x-5  '>
     <h1 className='text-white'>Support </h1> 
     <h1 className=' text-sky-700 underline '>The Cause</h1>
     </div>
     <div className='flex justify-center'>
-    <h1 className='pt-4 text-lg text-white text-center '>Support the ause and be hope for someone in need.</h1>
+    <h1 className='pt-4 px-4 text-lg text-white text-center '>Support the ause and be hope for someone in need.</h1>
     </div>
       </div>
 
