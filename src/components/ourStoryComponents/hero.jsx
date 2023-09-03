@@ -4,8 +4,8 @@ import HeroImage1 from '../../assets/images/custom/001.jpg'
 const Hero = () => {
   return (
     <div className='bg-gray-300 relative'>
-        <div className='grid grid-cols-2 '>
-            <div className='py-10 pl-20 z-10'>
+        <div className='flex flex-col md:grid grid-cols-2 '>
+            <div className='hidden md:block py-10 pl-20 z-10'>
             <img className='my-10 ml-10 bg-opacity-50 rounded-3xl shadow-2xl shadow-blue-700 bg-blue-700' src={HeroImage1} alt="" />
             </div>
 
@@ -26,10 +26,10 @@ const Hero = () => {
             </div>
         </div>
 
-        <div className='absolute h-1/2 w-1/2 left-1/3 bg-sky-500 bottom-8 z-0'>
+        <div className='hidden md:block absolute h-1/2 w-1/2 left-1/3 bg-sky-500 bottom-8 z-0'>
 
         </div>
-        <div className='absolute h-64 w-64 shadow-2xl shadow-orange-500 right-0 rounded-full bg-sky-500 top-24 z-0'>
+        <div className=' absolute h-64 w-64 shadow-2xl shadow-orange-500 right-0 rounded-full bg-sky-500 top-24 z-0'>
 
 </div>
     </div>

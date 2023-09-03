@@ -4,20 +4,20 @@ const VisonAndMission = () => {
   return (
     <div className='pb-20'> 
 
-<div className='mx-24 p-8 mt-16 pt-4 bg-sky-700 text-gray-300 rounded-xl shadow-lg shadow-black'>
+<div className='mx-10 md:mx-24 p-8 mt-16 pt-4 bg-sky-700 text-gray-300 rounded-xl shadow-lg shadow-black'>
     <h1 className='text-xl font-semibold pb-5'>Our Vision</h1>
     <p>
     To provide a safe, caring, and loving environment for children, who are vulnerable, orphaned or abandoned. We strive to place our children back into their family home; where this is not possible, we would hope for adoption.
     </p>
 </div>
-<div className='mx-24 p-8 mt-16 pt-4 bg-sky-700 text-gray-300 rounded-xl shadow-lg shadow-black'>
+<div className='mx-10 md:mx-24 p-8 mt-16 pt-4 bg-sky-700 text-gray-300 rounded-xl shadow-lg shadow-black'>
     <h1 className='text-xl font-semibold pb-5'>Our Mission</h1>
     <p>
     Ensure every needy child is reached and has access to all their basic needs, including but not limited to, education, health, shelter, food and clothing.
     </p>
 </div>
 
-<div className='mx-24 p-8 mt-16 pt-4 bg-sky-700 text-gray-300 rounded-xl shadow-lg shadow-black space-y-3'>
+<div className='mx-10 md:mx-24 p-8 mt-16 pt-4 bg-sky-700 text-gray-300 rounded-xl shadow-lg shadow-black space-y-3'>
     <h1 className='text-xl font-semibold pb-5'>Values</h1>
    <p> <span className='font-bold'> Integrity -</span> We are committed to always follow ethical principles on child welfare to improve the lives of needy children.</p>
    <p> <span className='font-bold'> Wellbeing -</span> The Magi addresses the physical, mental, social and spiritual needs of orphans, vulnerable children, and their guardians within their communit</p>
