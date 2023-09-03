@@ -13,10 +13,10 @@ const Testimonial = () => {
           slidesPerView: 3,
         },
         746: {
-          slidesPerView: 3,
+          slidesPerView: 2,
         },
         550: {
-          slidesPerView: 2,
+          slidesPerView: 1,
         },
       
       };
@@ -24,7 +24,7 @@ const Testimonial = () => {
 
   return (
     <div className=' m-8'>
-<div className='flex text-5xl font-semibold w-full pb-14'>
+<div className='flex text-3xl sm:text-4xl md:text-5xl font-semibold w-full pb-14'>
     <div className='flex mx-auto'>
     <h1 className='text-gray-700 '>Testi</h1>
     <h1 className='text-sky-700 underline'>mony.</h1>
