@@ -60,10 +60,10 @@ const Blog = (props) => {
   if (blog.displayOnHomePage) {
     return (
       <SwiperSlide>
-        <div className='cursor-pointer mb-10 bg-gradient-to-r from-blue-500 to-sky-400 text-white space-y-3 rounded-xl overflow-hidden'>
-        <img src={blog.image} alt="" />
+        <div className='mx-auto w-fit cursor-pointer mb-10 bg-gradient-to-r from-blue-500 to-sky-400 text-white space-y-3 rounded-xl overflow-hidden'>
+        <img className="mx-auto pt-2" src={blog.image} alt="" />
         <div className='p-4 space-y-3'>
-        <h1>Title: {blog.topic}</h1>
+        <h1 className="w-full">Title: {blog.topic}</h1>
         <h1>Genre: {blog.genre}</h1>
         <div className=''>
             <Link to="/blogdetails">
