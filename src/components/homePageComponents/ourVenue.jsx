@@ -5,15 +5,15 @@ import {MapPin , Envelope, Phone   } from "@phosphor-icons/react";
 const OurVenue = () => {
   return (
     <div>
-        <div className='flex text-3xl smd:text-4xl md:text-5xl font-semibold space-x-3 p-5'>
+        <div className=' flex text-3xl smd:text-4xl md:text-5xl font-semibold space-x-3 py-5 px-1'>
         <h1 className='text-gray-700 '>Our</h1>
         <h1 className='text-sky-700 underline'>Venue</h1>
         </div>
 
 
-        <div className='flex slg:grid flex-col-reverse grid-cols-2 p-10 gap-x-5 '>
+        <div className='flex slg:grid flex-col-reverse grid-cols-2 pb-10 px-2 md:px-10 gap-x-5 '>
 
-        <div className="w-full  mx-auto rounded-xl overflow-hidden border-2 border-sky-700 border-opacity-30">
+        <div className=" w-full  mx-auto rounded-xl overflow-hidden border-2 border-sky-700 border-opacity-30">
   <div className="relative h-0 " style={{ paddingBottom: '66.66%' }}>
     <iframe src="https://maps.google.com/maps?q=Dashen%20Bank%20Sc%20Ghion%20Branch&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameBorder="0" scrolling="no" className="absolute inset-0 w-full h-full"></iframe>
   </div>

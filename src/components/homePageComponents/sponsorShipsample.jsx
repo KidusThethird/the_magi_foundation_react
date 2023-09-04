@@ -50,7 +50,7 @@ const SponsorShipSample = () => {
 </div>
 
 
-    <div className='flex w-full   py-10' >
+    <div className='flex w-full   py-5' >
         <button className='text-white font-semibold bg-sky-700 mx-auto
          py-2 px-3 md:py-3 text-sm md:text-base md:px-5 rounded-full hover:bg-white hover:text-sky-700 hover:border-2 border-sky-700 duration-300'>Load More SponsorShips</button>
     </div>

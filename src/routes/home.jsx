@@ -9,6 +9,7 @@ import Testimonial from '../components/homePageComponents/testimonial'
 import ContactUsForm from '../components/commonComponents/contactUsForm'
 
 import SponsorShipSample from '../components/homePageComponents/sponsorShipsample'
+import YoutubeSection from '../components/homePageComponents/youtubeSection'
 
 
  const home = (props) => {
@@ -16,6 +17,7 @@ import SponsorShipSample from '../components/homePageComponents/sponsorShipsampl
   return (
     <>
     <Hero />
+    <YoutubeSection />
     <About />
     <Blog setBlogIndex={setBlogIndex}/>
     <Advertisment />

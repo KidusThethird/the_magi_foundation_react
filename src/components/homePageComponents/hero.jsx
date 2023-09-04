@@ -8,7 +8,7 @@ import {CaretDown  } from "@phosphor-icons/react";
 
 const Hero = () => {
   return (
-    <div className='pt-10'>
+    <div className='pt-10 '>
 
 <div className='relative flex w-full items-center justify-center'>
 <img className='hidden md:block w-full' src={HeroImage1} alt="" />
@@ -21,7 +21,7 @@ const Hero = () => {
     <div className='   absolute text-center top-1/3 justify-center ' >
         
         <div className='flex text-3xl smd:text-4xl slg:text-6xl font-bold space-x-3'>
-            <h1 className='text-blue-500 underline '>PARTNER </h1>
+            <h1 className='text-sky-300 underline'>PARTNER </h1>
          <h1 className='text-white'> WITH US</h1>
          </div>
         <div className='text-md smd:text-lg slg:text-xl pt-10 flex space-x-4 justify-center'>
