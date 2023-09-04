@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import { EventsList } from '../utils/events';
 import EventDetails from './eventDetails';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Events = (props) => {
 
@@ -26,10 +27,7 @@ const Events = (props) => {
             {EventsList.map((chosen_event)=> {
         return (
     
-             <Link to={{
-        pathname: "/eventdetails",
-        
-      }}>
+             <Link to= "/eventdetails#top"   >
         <div onClick={()=>changeEventIndex(chosen_event.id)} className='bg-green-500 mb-20 rounded-2xl relative overflow-hidden cursor-pointer hover:scale-105 duration-200  w-fit mx-auto shadow-2xl shadow-sky-700'>
  
  <div className='w-fit lsm:w-48 sm:w-60 md:w-52 slg:w-60 lg:w-fit '>
