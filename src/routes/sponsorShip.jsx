@@ -13,13 +13,13 @@ const SponsorShip = (props) => {
   return (
     <div className='py-20'>
 
-<div className='flex text-5xl font-semibold'>
+<div className='flex text-3xl md:text-5xl font-semibold'>
     <div className='flex  mx-auto pb-9'>
     <h1 className='text-gray-700'>Sponsor</h1><h1 className='text-sky-700 underline'>Ships</h1>
     </div>
 </div>
 
-<div className='grid grid-cols-4 gap-10 px-3'>
+<div className='grid  grid-cols-2 lsm:grid-cols-3 md:grid-cols-4 gap-5 lsm:gap-10 px-3'>
 
 {KidsList.map((kid)=>{
 
