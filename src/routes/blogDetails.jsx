@@ -8,7 +8,7 @@ const BlogDetails = (props) => {
   return (
     <div className='py-20'>
 
-    <div className='grid grid-cols-3 mx-10 bg-gradient-to-r from-blue-600 to-sky-700 text-white rounded'>
+    <div className='grid grid-cols-1 slg:grid-cols-3 mx-3 md:mx-10 bg-gradient-to-r from-blue-600 to-sky-700 text-white rounded'>
         <div className='col-span-1 w-full h-full'>
             <img className='mx-auto my-10 rounded shadow-xl' src={BlogList[blogIndex].image} alt="" />
 
