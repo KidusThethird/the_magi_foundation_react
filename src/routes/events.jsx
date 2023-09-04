@@ -21,7 +21,7 @@ const Events = (props) => {
         <h1 className='text-sky-700 underline'>nts</h1>
       </div>
 
-        <div className='grid grid-cols-3 mx-10 py-10 overflow-hidden'>
+        <div className='grid grid-cols-1 lsm:grid-cols-2 md:grid-cols-3 mx-10 py-10 overflow-hidden'>
 
             {EventsList.map((chosen_event)=> {
         return (
@@ -30,12 +30,14 @@ const Events = (props) => {
         pathname: "/eventdetails",
         
       }}>
-        <div onClick={()=>changeEventIndex(chosen_event.id)} className='mb-20 rounded-2xl relative overflow-hidden cursor-pointer hover:scale-105 duration-200  w-fit mx-auto shadow-2xl shadow-sky-700'>
+        <div onClick={()=>changeEventIndex(chosen_event.id)} className='bg-green-500 mb-20 rounded-2xl relative overflow-hidden cursor-pointer hover:scale-105 duration-200  w-fit mx-auto shadow-2xl shadow-sky-700'>
  
-<img className='mx-auto ' src={chosen_event.image} alt="" />
+ <div className='w-fit lsm:w-48 sm:w-60 md:w-52 slg:w-60 lg:w-fit '>
+<img className='mx-auto w-fit ' src={chosen_event.image} alt="" />
+</div>
 
-<div className='absolute bottom-9 w-full text-center  '>
-<h1 className='text-center text-xl bg-sky-700 bg-opacity-80 text-white' >{chosen_event.title}</h1>
+<div className='  absolute bottom-9 w-full text-center  '>
+<h1 className=' text-center text-xl bg-sky-700 bg-opacity-80 text-white' >{chosen_event.title}</h1>
 </div>
 
 <div className='absolute top-0 w-full text-center   '>

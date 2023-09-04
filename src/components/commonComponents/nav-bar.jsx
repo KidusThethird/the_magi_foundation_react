@@ -96,8 +96,8 @@ const Navbar = (props) => {
    
     <Link onClick={()=>toDefalult()} to='/#top'>Home</Link>
     <div onClick={()=>toggleAboutList()} className='flex  space-x-2'>
-    <a href="">About</a>
-    <CaretDown size={20}/>
+    <h1 className='cursor-pointer'>About</h1>
+    <CaretDown className='cursor-pointer' size={20}/>
     </div>
     {aboutList &&
  <div className='ml-4 flex flex-col space-y-5'>
@@ -109,8 +109,8 @@ const Navbar = (props) => {
    
     <Link onClick={()=>toDefalult()} to='/events#top'>Events</Link>
     <div  onClick={()=>toggleGalleryList()} className='flex  space-x-2'>
-    <a href="">Gallery</a>
-    <CaretDown size={20}/>
+    <h1 className='cursor-pointer'>Gallery</h1>
+    <CaretDown className='cursor-pointer' size={20}/>
     </div>
     {galleryList &&
       <div className='ml-4 flex flex-col space-y-5'>
