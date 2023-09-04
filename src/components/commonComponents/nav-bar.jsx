@@ -21,6 +21,9 @@ const Navbar = (props) => {
  const toggleGalleryList=()=>{
   galleryList ? setGalleryList(false): setGalleryList(true);
  }
+ const toDefalult =() =>{
+  toggleDropDownList(); setAboutList(false); setGalleryList(false)
+ }
 
   return (
     <div className='fixed z-50 w-full '>
@@ -32,18 +35,21 @@ const Navbar = (props) => {
 </div>
 
 <div className='hidden lg:flex space-x-10 my-auto  '>
-<a href="/">Home</a>
+  <Link  to="/">Home</Link>
+
 <div className="group relative ">
             <h1 className='cursor-pointer'>About</h1>
             <div className="hidden group-hover:block absolute w-32  left-0 z-50">
               <div className="flex flex-col px-4 py-1 space-y-2 w-full  bg-blue-900 rounded-b-2xl">
-                <a className="text-left " href="/ourstory">Our Story</a>
-                <a className="text-left" href="/ourteam">Our Team</a>
+                <Link to="/ourstory">Our Story</Link>
+                <Link to="/ourteam">Our Team</Link>
+         
               </div>
             </div>
           </div>
 
-<a href="/events">Events</a>
+
+<Link to="/events">Events</Link>
 
 <div className='group relative'>
   <h1 className='cursor-pointer'>Gallery</h1>
@@ -58,9 +64,10 @@ const Navbar = (props) => {
               </div>
             </div>
 </div>
-<a href="/sponsorship">Sponsorship</a>
-<a href="/blogs">Blog</a>
-<a href="/contact">Contact</a>
+<Link to="/sponsorship">SponsorShip</Link>
+<Link to='blogs'>Blog</Link>
+<Link to='/contact'>Contact</Link>
+
 </div>
 
 
@@ -82,41 +89,40 @@ const Navbar = (props) => {
 
   
 {dropDownList &&
-  <div className='w-full flex relative  '>
-    <div className='w-1/2  smd:w-1/3 overflow-y-auto max-h-[500px] scroll-auto  absolute right-0 rounded-bl-2xl shadow-2xl shadow-blue-700 bg-blue-900 bg-opacity-90 text-white  flex flex-col text-left pl-7 space-y-5 py-5'>
-    <a href="/">Home</a>
+  <div  className='w-full flex relative  '>
+    <div  className='w-1/2  smd:w-1/3 overflow-y-auto max-h-[500px] scroll-auto  absolute right-0 rounded-bl-2xl shadow-2xl shadow-blue-700 bg-blue-900 bg-opacity-90 text-white  flex flex-col text-left pl-7 space-y-5 py-5'>
+   
+    <Link onClick={()=>toDefalult()} to='/'>Home</Link>
     <div onClick={()=>toggleAboutList()} className='flex  space-x-2'>
     <a href="">About</a>
     <CaretDown size={20}/>
     </div>
     {aboutList &&
  <div className='ml-4 flex flex-col space-y-5'>
- <a href="" >About1</a>
- <a href="">About2</a>
+  <Link onClick={()=>toDefalult()} to="/ourstory">Our Story</Link>
+  <Link onClick={()=>toDefalult()} to="/ourteam">Our Team</Link>
  </div>
 
     }
    
-    <a href="">Eents</a>
+    <Link onClick={()=>toDefalult()} to='/events'>Events</Link>
     <div  onClick={()=>toggleGalleryList()} className='flex  space-x-2'>
     <a href="">Gallery</a>
     <CaretDown size={20}/>
     </div>
     {galleryList &&
       <div className='ml-4 flex flex-col space-y-5'>
-      <a href="">Gallery1</a>
-      <a href="">Gallery2</a>
-      <a href="">Gallery3</a>
-      <a href="">Gallery1</a>
-      <a href="">Gallery2</a>
-      <a href="">Gallery3</a>
+
+        <Link to="/gallery" onClick={() => {setCategorySelected("school"); toDefalult();}}>School</Link>
+        <Link to="/gallery" onClick={() => {setCategorySelected("debrebrhan"); toDefalult();}}>Debrebrhan</Link>
+        <Link to="/gallery" onClick={() => {setCategorySelected("other"); toDefalult();}}>Other</Link>
     </div>
     }
   
     
-    <a href="/sponsorship">Sponsorship</a>
-    <a href="/blogs">Blog</a>
-    <a href="/contact">Contact</a>
+  <Link onClick={()=>toDefalult()} to="/sponsorship">SponsorShip</Link>
+<Link onClick={()=>toDefalult()} to='blogs'>Blog</Link>
+<Link onClick={()=>toDefalult()} to='/contact'>Contact</Link>
     <div>
     <button className='bg-sky-600 px-3 py-1 rounded-2xl'>Donate</button>
     </div>
