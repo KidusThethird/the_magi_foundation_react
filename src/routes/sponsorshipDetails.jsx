@@ -8,7 +8,7 @@ const SponsorshipDetails = (props) => {
   return (
     <div className='pt-10'>
 
-      <div className='py-10 grid grid-cols-2  bg-gradient-to-r from-blue-500 to-purple-500'>
+      <div className='py-10 grid grid-cols-1 sm:grid-cols-2  bg-gradient-to-r from-blue-500 to-purple-500'>
 
         <div className='mx-auto py-5 px-5'>
           <img className='w-3/4 rounded-2xl shadow-2xl' src={KidsList[sponsorShipIndex].image} alt="" />
