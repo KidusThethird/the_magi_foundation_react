@@ -1,6 +1,7 @@
 import React from 'react';
 import {BlogList} from '../utils/blogs';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Blogs = (props) => {
     const setBlogIndex = props.setBlogIndex;
@@ -16,17 +17,17 @@ const Blogs = (props) => {
     </div>
     </div>
 
-        <div className='grid grid-cols-4 gap-5 mx-5'>
+        <div className='grid grid:grid-cols-1 lsm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mx-5'>
 {BlogList.map((blog)=>{
 
    return(
     <div className='bg-gradient-to-r from-blue-500 to-sky-400 text-white space-y-3 rounded-xl overflow-hidden'>
-        <img src={blog.image} alt="" />
+        <img className='mx-auto pt-2 ' src={blog.image} alt="" />
         <div className='p-4 space-y-3'>
         <h1>Title: {blog.topic}</h1>
         <h1>Genre: {blog.genre}</h1>
         <div className=''>
-            <Link to="/blogdetails">
+            <Link to="/blogdetails#top">
             <button onClick={()=>changeBlogIndex(blog.id)} className='bg-sky-700 px-3 py-1 rounded-xl'>Read</button>
             </Link>
        

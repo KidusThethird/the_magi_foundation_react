@@ -1,6 +1,7 @@
 import React from 'react';
 import {KidsList} from '../utils/kidsToSponsor';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const SponsorShip = (props) => {
 
@@ -26,7 +27,7 @@ const SponsorShip = (props) => {
 const index = (parseInt(kid.id))+1;
 
     return (
-        <Link to="/sponsorshipdetails">
+        <Link to="/sponsorshipdetails#top">
     <div onClick={()=>changeSponsorShipIndex(kid.id)} className='relative shadow-2xl hover:shadow-sky-700 rounded-b-3xl overflow-hidden'>
         <div  className='rounded-t-3xl  overflow-hidden'>
     <img src={kid.image} className='rounded-b-3xl hover:scale-110 overflow-hidden transition-all duration-500' alt="" />
