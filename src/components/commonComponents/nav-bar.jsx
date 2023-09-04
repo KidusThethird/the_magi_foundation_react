@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Logo from '../../assets/images/logo/themagilogo1.png';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import {List , X , CaretDown } from "@phosphor-icons/react";
+import { HashLink as Link } from 'react-router-hash-link';
+
 const Navbar = (props) => {
 
  const setCategorySelected = props.setCategorySelected;
@@ -92,37 +94,37 @@ const Navbar = (props) => {
   <div  className='w-full flex relative  '>
     <div  className='w-1/2  smd:w-1/3 overflow-y-auto max-h-[500px] scroll-auto  absolute right-0 rounded-bl-2xl shadow-2xl shadow-blue-700 bg-blue-900 bg-opacity-90 text-white  flex flex-col text-left pl-7 space-y-5 py-5'>
    
-    <Link onClick={()=>toDefalult()} to='/'>Home</Link>
+    <Link onClick={()=>toDefalult()} to='/#top'>Home</Link>
     <div onClick={()=>toggleAboutList()} className='flex  space-x-2'>
     <a href="">About</a>
     <CaretDown size={20}/>
     </div>
     {aboutList &&
  <div className='ml-4 flex flex-col space-y-5'>
-  <Link onClick={()=>toDefalult()} to="/ourstory">Our Story</Link>
-  <Link onClick={()=>toDefalult()} to="/ourteam">Our Team</Link>
+  <Link onClick={()=>toDefalult()} to="/ourstory#top">Our Story</Link>
+  <Link onClick={()=>toDefalult()} to="/ourteam#top">Our Team</Link>
  </div>
 
     }
    
-    <Link onClick={()=>toDefalult()} to='/events'>Events</Link>
+    <Link onClick={()=>toDefalult()} to='/events#top'>Events</Link>
     <div  onClick={()=>toggleGalleryList()} className='flex  space-x-2'>
     <a href="">Gallery</a>
     <CaretDown size={20}/>
     </div>
     {galleryList &&
       <div className='ml-4 flex flex-col space-y-5'>
-
-        <Link to="/gallery" onClick={() => {setCategorySelected("school"); toDefalult();}}>School</Link>
-        <Link to="/gallery" onClick={() => {setCategorySelected("debrebrhan"); toDefalult();}}>Debrebrhan</Link>
-        <Link to="/gallery" onClick={() => {setCategorySelected("other"); toDefalult();}}>Other</Link>
+        <Link to="/gallery#top" onClick={() => {setCategorySelected("all"); toDefalult();}}>All</Link>
+        <Link to="/gallery#top" onClick={() => {setCategorySelected("school"); toDefalult();}}>School</Link>
+        <Link to="/gallery#top" onClick={() => {setCategorySelected("debrebrhan"); toDefalult();}}>Debrebrhan</Link>
+        <Link to="/gallery#top" onClick={() => {setCategorySelected("other"); toDefalult();}}>Other</Link>
     </div>
     }
   
     
-  <Link onClick={()=>toDefalult()} to="/sponsorship">SponsorShip</Link>
-<Link onClick={()=>toDefalult()} to='blogs'>Blog</Link>
-<Link onClick={()=>toDefalult()} to='/contact'>Contact</Link>
+  <Link onClick={()=>toDefalult()} to="/sponsorship#top">SponsorShip</Link>
+<Link onClick={()=>toDefalult()} to='blogs#top'>Blog</Link>
+<Link onClick={()=>toDefalult()} to='/contact#top'>Contact</Link>
     <div>
     <button className='bg-sky-600 px-3 py-1 rounded-2xl'>Donate</button>
     </div>
