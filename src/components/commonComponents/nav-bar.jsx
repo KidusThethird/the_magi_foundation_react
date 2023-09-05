@@ -37,38 +37,39 @@ const Navbar = (props) => {
 </div>
 
 <div className='hidden lg:flex space-x-10 my-auto  '>
-  <Link  to="/">Home</Link>
+  <Link className='navhover'  to="/">Home</Link>
 
-<div className="group relative ">
-            <h1 className='cursor-pointer'>About</h1>
+<div className=" group relative  ">
+            <h1 className='cursor-pointer group-hover:navhover'>About</h1>
             <div className="hidden group-hover:block absolute w-32  left-0 z-50">
               <div className="flex flex-col px-4 py-1 space-y-2 w-full  bg-blue-900 rounded-b-2xl">
-                <Link to="/ourstory">Our Story</Link>
-                <Link to="/ourteam">Our Team</Link>
+                <Link className='navhover' to="/ourstory">Our Story</Link>
+                <Link className='navhover' to="/ourteam">Our Team</Link>
          
               </div>
             </div>
           </div>
 
 
-<Link to="/events">Events</Link>
+<Link className='navhover' to="/events">Events</Link>
 
 <div className='group relative'>
-  <h1 className='cursor-pointer'>Gallery</h1>
+  <h1 className='cursor-pointer navhover'>Gallery</h1>
   <div className="hidden group-hover:block absolute w-32  left-0 z-50">
               <div className="flex flex-col px-4 py-1 space-y-2 w-full  bg-blue-900 rounded-b-2xl">
-                <a href="/gallery">All</a>
-             
-                <Link to="/gallery" onClick={() => setCategorySelected("school")}>School</Link>
-                <Link to="/gallery" onClick={() => setCategorySelected("debrebrhan")}>Debrebrhan</Link>
-                <Link to="/gallery" onClick={() => setCategorySelected("other")}>Other</Link>
+                
+                
+                <Link className='navhover' to="/gallery" onClick={() => setCategorySelected("all")}>All</Link>
+                <Link className='navhover' to="/gallery" onClick={() => setCategorySelected("school")}>School</Link>
+                <Link className='navhover' to="/gallery" onClick={() => setCategorySelected("debrebrhan")}>Debrebrhan</Link>
+                <Link className='navhover' to="/gallery" onClick={() => setCategorySelected("other")}>Other</Link>
               
               </div>
             </div>
 </div>
-<Link to="/sponsorship">SponsorShip</Link>
-<Link to='blogs'>Blog</Link>
-<Link to='/contact'>Contact</Link>
+<Link className='navhover' to="/sponsorship">SponsorShip</Link>
+<Link className='navhover' to='blogs'>Blog</Link>
+<Link className='navhover' to='/contact'>Contact</Link>
 
 </div>
 
@@ -94,37 +95,37 @@ const Navbar = (props) => {
   <div  className='w-full flex relative  '>
     <div  className='w-1/2  smd:w-1/3 overflow-y-auto max-h-[500px] scroll-auto  absolute right-0 rounded-bl-2xl shadow-2xl shadow-blue-700 bg-blue-900 bg-opacity-90 text-white  flex flex-col text-left pl-7 space-y-5 py-5'>
    
-    <Link onClick={()=>toDefalult()} to='/#top'>Home</Link>
+    <Link className='navhover' onClick={()=>toDefalult()} to='/#top'>Home</Link>
     <div onClick={()=>toggleAboutList()} className='flex  space-x-2'>
-    <h1 className='cursor-pointer'>About</h1>
+    <h1 className='cursor-pointer navhover'>About</h1>
     <CaretDown className='cursor-pointer' size={20}/>
     </div>
     {aboutList &&
  <div className='ml-4 flex flex-col space-y-5'>
-  <Link onClick={()=>toDefalult()} to="/ourstory#top">Our Story</Link>
-  <Link onClick={()=>toDefalult()} to="/ourteam#top">Our Team</Link>
+  <Link className='navhover' onClick={()=>toDefalult()} to="/ourstory#top">Our Story</Link>
+  <Link className='navhover' onClick={()=>toDefalult()} to="/ourteam#top">Our Team</Link>
  </div>
 
     }
    
-    <Link onClick={()=>toDefalult()} to='/events#top'>Events</Link>
+    <Link className='navhover' onClick={()=>toDefalult()} to='/events#top'>Events</Link>
     <div  onClick={()=>toggleGalleryList()} className='flex  space-x-2'>
-    <h1 className='cursor-pointer'>Gallery</h1>
+    <h1 className='cursor-pointer navhover'>Gallery</h1>
     <CaretDown className='cursor-pointer' size={20}/>
     </div>
     {galleryList &&
       <div className='ml-4 flex flex-col space-y-5'>
-        <Link to="/gallery#top" onClick={() => {setCategorySelected("all"); toDefalult();}}>All</Link>
-        <Link to="/gallery#top" onClick={() => {setCategorySelected("school"); toDefalult();}}>School</Link>
-        <Link to="/gallery#top" onClick={() => {setCategorySelected("debrebrhan"); toDefalult();}}>Debrebrhan</Link>
-        <Link to="/gallery#top" onClick={() => {setCategorySelected("other"); toDefalult();}}>Other</Link>
+        <Link className='navhover' to="/gallery#top" onClick={() => {setCategorySelected("all"); toDefalult();}}>All</Link>
+        <Link className='navhover' to="/gallery#top" onClick={() => {setCategorySelected("school"); toDefalult();}}>School</Link>
+        <Link className='navhover' to="/gallery#top" onClick={() => {setCategorySelected("debrebrhan"); toDefalult();}}>Debrebrhan</Link>
+        <Link className='navhover' to="/gallery#top" onClick={() => {setCategorySelected("other"); toDefalult();}}>Other</Link>
     </div>
     }
   
     
-  <Link onClick={()=>toDefalult()} to="/sponsorship#top">SponsorShip</Link>
-<Link onClick={()=>toDefalult()} to='blogs#top'>Blog</Link>
-<Link onClick={()=>toDefalult()} to='/contact#top'>Contact</Link>
+  <Link className='navhover' onClick={()=>toDefalult()} to="/sponsorship#top">SponsorShip</Link>
+<Link className='navhover' onClick={()=>toDefalult()} to='blogs#top'>Blog</Link>
+<Link className='navhover' onClick={()=>toDefalult()} to='/contact#top'>Contact</Link>
     <div>
     <button className='bg-sky-600 px-3 py-1 rounded-2xl'>Donate</button>
     </div>
