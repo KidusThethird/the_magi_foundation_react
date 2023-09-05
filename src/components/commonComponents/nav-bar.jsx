@@ -33,25 +33,27 @@ const Navbar = (props) => {
 
 <div className='my-auto flex'>
     <img className='w-8' src={Logo} alt="" />
+    <a href="/">
    <h1 className=' sm:block sm:text-xl my-auto pl-5 smd:text-2xl font-semibold text-sky-400'> The Magi Foundation </h1>
+   </a>
 </div>
 
 <div className='hidden lg:flex space-x-10 my-auto  '>
-  <Link className='navhover'  to="/">Home</Link>
+  <Link className='navhover'  to="/#top">Home</Link>
 
 <div className=" group relative  ">
             <h1 className='cursor-pointer group-hover:navhover'>About</h1>
             <div className="hidden group-hover:block absolute w-32  left-0 z-50">
               <div className="flex flex-col px-4 py-1 space-y-2 w-full  bg-blue-900 rounded-b-2xl">
-                <Link className='navhover' to="/ourstory">Our Story</Link>
-                <Link className='navhover' to="/ourteam">Our Team</Link>
+                <Link className='navhover' to="/ourstory#top">Our Story</Link>
+                <Link className='navhover' to="/ourteam#top">Our Team</Link>
          
               </div>
             </div>
           </div>
 
 
-<Link className='navhover' to="/events">Events</Link>
+<Link className='navhover' to="/events#top">Events</Link>
 
 <div className='group relative'>
   <h1 className='cursor-pointer navhover'>Gallery</h1>
@@ -59,24 +61,24 @@ const Navbar = (props) => {
               <div className="flex flex-col px-4 py-1 space-y-2 w-full  bg-blue-900 rounded-b-2xl">
                 
                 
-                <Link className='navhover' to="/gallery" onClick={() => setCategorySelected("all")}>All</Link>
-                <Link className='navhover' to="/gallery" onClick={() => setCategorySelected("school")}>School</Link>
-                <Link className='navhover' to="/gallery" onClick={() => setCategorySelected("debrebrhan")}>Debrebrhan</Link>
-                <Link className='navhover' to="/gallery" onClick={() => setCategorySelected("other")}>Other</Link>
+                <Link className='navhover' to="/gallery#top" onClick={() => setCategorySelected("all")}>All</Link>
+                <Link className='navhover' to="/gallery#top" onClick={() => setCategorySelected("school")}>School</Link>
+                <Link className='navhover' to="/gallery#top" onClick={() => setCategorySelected("debrebrhan")}>Debrebrhan</Link>
+                <Link className='navhover' to="/gallery#top" onClick={() => setCategorySelected("other")}>Other</Link>
               
               </div>
             </div>
 </div>
-<Link className='navhover' to="/sponsorship">SponsorShip</Link>
-<Link className='navhover' to='blogs'>Blog</Link>
-<Link className='navhover' to='/contact'>Contact</Link>
+<Link className='navhover' to="/sponsorship#top">SponsorShip</Link>
+<Link className='navhover' to='blogs#top'>Blog</Link>
+<Link className='navhover' to='/contact#top'>Contact</Link>
 
 </div>
 
 
 
 
-<div className='hidden lg:block bg-sky-600 px-4 py-2 rounded-3xl'>
+<div className='hidden lg:block bg-sky-600 px-4 py-2 rounded-3xl duration-150 hover:scale-105 hover:font-bold hover:bg-sky-400 '>
     <button>Donate</button>
 </div>
 <div className='lg:hidden cursor-pointer' onClick={()=>toggleDropDownList() }>
@@ -127,7 +129,7 @@ const Navbar = (props) => {
 <Link className='navhover' onClick={()=>toDefalult()} to='blogs#top'>Blog</Link>
 <Link className='navhover' onClick={()=>toDefalult()} to='/contact#top'>Contact</Link>
     <div>
-    <button className='bg-sky-600 px-3 py-1 rounded-2xl'>Donate</button>
+    <button className='bg-sky-600 px-3 py-1 rounded-2xl hover:bg-sky-500 hover:scale-105 duration-150'>Donate</button>
     </div>
     </div>
   </div>
