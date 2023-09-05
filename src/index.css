@@ -6,6 +6,9 @@
 
 @layer utilities {
     .navhover {
-       @apply hover:text-sky-300 hover:scale-105 hover:font-semibold duration-150
+       @apply hover:text-sky-300 hover:scale-105 hover:font-semibold duration-150;
+    }
+    .gallerySelector {
+      @apply text-white bg-sky-700 px-3 py-1 rounded-xl hover:scale-105 hover:bg-sky-500 hover:text-white duration-150;
     }
   }

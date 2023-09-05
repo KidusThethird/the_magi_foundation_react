@@ -10,7 +10,7 @@ const TeamList = () => {
             <h1 className='text-sky-700 underline'>Team</h1>
         </div>
 
-<div className='py-16 px-2 md:px-20'>
+<div className='py-8 px-2 md:px-20'>
 
 {TeamMembers.map((member)=>{
     

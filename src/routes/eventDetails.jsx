@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { EventsList } from '../utils/events';
+import { Link } from 'react-router-dom';
 
 
 
@@ -55,9 +56,10 @@ return (
                 <h1 className='font-bold py-3'>{date}</h1>
                 <h1 className='py-2 text-gray-300'>{subTitle}</h1>
                 <h1>{description}</h1>
-               
-                <button className='mt-5  bg-sky-700 px-3 py-1   h-fit rounded-2xl shadow-xl'>More Events</button>
-             
+               <Link to='/events'>
+                <button className='mt-5  bg-sky-700 px-3 py-1   h-fit rounded-2xl shadow-xl
+                hover:bg-sky-500 duration-150'>More Events</button>
+                </Link>
             </div>
 
         </div>

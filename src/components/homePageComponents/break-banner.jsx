@@ -25,7 +25,8 @@ const BreakBanner = () => {
 
       <div className=' bg-blue-700 bg-opacity-30 w-full h-full flex pb-12 md:pb-0 '>
 
-        <a href="" className='bg-white  text-gray-700 px-5 py-3 rounded-full m-auto '>Donate Now</a>
+        <a href="" className='bg-white  text-gray-700 font-semibold px-5 py-3 rounded-full m-auto 
+        hover:bg-sky-700 hover:text-white duration-200'>Donate Now</a>
       </div>
     </div>
   )

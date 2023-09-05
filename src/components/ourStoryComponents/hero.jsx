@@ -20,7 +20,8 @@ const Hero = () => {
                      The Magi Foundation is a local, charitable, non-for profit, non-governmental organization. Its inception was from Australian couple of Ethiopian origin whose true Passion for Supporting Children, brought two Ethiopians to found it and register in Ethiopia in April 2022.
                      </p>
                      <div className='pt-5 '>
-                     <button className='bg-sky-500 text-white px-3 py-1 rounded' >Learn More</button>
+                     <button className='bg-sky-500 text-white px-3 py-1 rounded
+                     hover:bg-sky-600 duration-150' >Learn More</button>
                      </div>
                 </div>
             </div>

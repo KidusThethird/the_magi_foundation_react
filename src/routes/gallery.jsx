@@ -88,10 +88,10 @@ if(activeImage >0){
             <h1 className='text-sky-700 underline'>lery</h1>
         </div>
         <div className='w-fit mx-auto space-x-3 text-gray-300 pb-3'>
-            <button onClick={()=>changeSeclectedCategory('all')} className='bg-sky-700 px-3 py-1 rounded-xl'>All</button>
-            <button onClick={()=>changeSeclectedCategory('debrebrhan')}  className='bg-sky-700 px-3 py-1 rounded-xl'>Debrebrhan</button>
-            <button onClick={()=>changeSeclectedCategory('school')}  className='bg-sky-700 px-3 py-1 rounded-xl'>School</button>
-            <button onClick={()=>changeSeclectedCategory('other')}  className='bg-sky-700 px-3 py-1 rounded-xl'>Other</button>
+            <button onClick={()=>changeSeclectedCategory('all')} className='gallerySelector'>All</button>
+            <button onClick={()=>changeSeclectedCategory('debrebrhan')}  className='gallerySelector'>Debrebrhan</button>
+            <button onClick={()=>changeSeclectedCategory('school')}  className='gallerySelector'>School</button>
+            <button onClick={()=>changeSeclectedCategory('other')}  className='gallerySelector'>Other</button>
         </div>
 
 

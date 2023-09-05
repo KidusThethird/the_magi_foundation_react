@@ -25,15 +25,18 @@ const Hero = () => {
          <h1 className='text-white'> WITH US</h1>
          </div>
         <div className='text-md smd:text-lg slg:text-xl pt-10 flex space-x-4 justify-center'>
-            <button className='border-4 bg-black bg-opacity-40 border-sky-500 rounded-full font-semibold text-white px-2 py-1 smd:px-3 smd:py-1'>
+            <button className='border-4 bg-black bg-opacity-40 border-sky-500 rounded-full font-semibold text-white px-2 py-1 smd:px-3 smd:py-1
+            hover:bg-sky-500 duration-150'>
                 Contact Us
             </button>
-            <button className='bg-blue-800 rounded-full font-semibold shadow-2xl text-white  px-3 py-1'>
+            <button className='bg-blue-800 rounded-full font-semibold shadow-2xl text-white  px-3 py-1
+            hover:bg-black hover:bg-opacity-40 duration-150'>
                 Volunteer
             </button>
         </div>
         <div className='hidden sm:flex justify-center w-full  pt-14 '>
-            <div className='text-blue-600 bg-white p-4 rounded-full cursor-pointer border-2 border-blue-700 border-opacity-40'>
+            <div className='text-blue-600 bg-white p-4 rounded-full cursor-pointer border-2 border-blue-700 border-opacity-40
+            hover:scale-105 duration-150'>
             <CaretDown size={32}/>
             </div>
         </div>
