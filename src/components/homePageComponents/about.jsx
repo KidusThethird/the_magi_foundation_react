@@ -14,9 +14,9 @@ const About = () => {
 
    <div className='flex space-x-4 pt-5'>
     <button className='border-2 border-sky-700 text-sky-700 rounded-full px-3 py-1
-    hover:bg-sky-700 hover:text-white duration-150    '>Read More</button>
+    hover:bg-sky-700 hover:text-white duration-150    '><a href="/ourstory">Read More</a></button>
     <button className='text-white bg-sky-700 rounded-full px-3 py-2 
-    hover:bg-sky-400 duration-150'>Check out Events</button>
+    hover:bg-sky-400 duration-150'><a href="/events">Check out Events</a></button>
     </div> 
 </div>
 

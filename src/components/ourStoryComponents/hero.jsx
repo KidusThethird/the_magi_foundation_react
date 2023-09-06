@@ -23,7 +23,9 @@ const Hero = () => {
                      </p>
                      <div className='pt-5 '>
                      <button className='bg-sky-500 text-white px-3 py-1 rounded
-                     hover:bg-sky-600 duration-150' >Learn More</button>
+                     hover:bg-sky-600 duration-150' >
+                      <a href="#ourVision">Learn More</a> 
+                      </button>
                      </div>
                 </div>
             </div>

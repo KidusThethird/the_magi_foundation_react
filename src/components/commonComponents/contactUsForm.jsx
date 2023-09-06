@@ -3,7 +3,7 @@ import CoverImage from '../../assets/images/banner/magi_banner_03.jpg'
 
 function ContactUsForm() {
   return (
-    <div  style={{
+    <div id="contact"  style={{
         backgroundImage: `url(${CoverImage})`, 
         backgroundSize: 'cover',
          backgroundPosition: 'center',

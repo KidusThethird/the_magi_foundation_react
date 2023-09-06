@@ -2,7 +2,7 @@ import React from 'react'
 
 const VisonAndMission = () => {
   return (
-    <div className='pb-20'> 
+    <div id='ourVision' className='pb-20'> 
 
 <div className='mx-10 md:mx-24 p-8 mt-16 pt-4 bg-sky-700 text-gray-300 rounded-xl shadow-lg shadow-black'>
     <h1 className='text-xl font-semibold pb-5'>Our Vision</h1>

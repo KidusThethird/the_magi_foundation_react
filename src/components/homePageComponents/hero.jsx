@@ -67,7 +67,8 @@ const Hero = () => {
         <div className='text-md smd:text-lg slg:text-xl pt-10 flex space-x-4 justify-center'>
             <button className='border-4 bg-black bg-opacity-40 border-sky-500 rounded-full font-semibold text-white px-2 py-1 smd:px-3 smd:py-1
             hover:bg-sky-500 duration-150'>
-                Contact Us
+              <a href="#contact"> Contact Us</a>
+               
             </button>
             <button className='bg-blue-800 rounded-full font-semibold shadow-2xl text-white  px-3 py-1
             hover:bg-black hover:bg-opacity-40 duration-150'>
