@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/the_magi_foundation_react/static/css/main.97114c8a.css",
-    "main.js": "/the_magi_foundation_react/static/js/main.ff255d9e.js",
+    "main.js": "/the_magi_foundation_react/static/js/main.d6862847.js",
     "static/media/img1.jpg": "/the_magi_foundation_react/static/media/img1.c969dc87854a8f7860c7.jpg",
     "static/media/db13.jpg": "/the_magi_foundation_react/static/media/db13.d8dbf067fe5b66fab6eb.jpg",
     "static/media/school10.jpg": "/the_magi_foundation_react/static/media/school10.995143128e5541887d34.jpg",
@@ -95,10 +95,10 @@
     "static/media/pic4.jpg": "/the_magi_foundation_react/static/media/pic4.1e12ebcea9ef49a6d427.jpg",
     "index.html": "/the_magi_foundation_react/index.html",
     "main.97114c8a.css.map": "/the_magi_foundation_react/static/css/main.97114c8a.css.map",
-    "main.ff255d9e.js.map": "/the_magi_foundation_react/static/js/main.ff255d9e.js.map"
+    "main.d6862847.js.map": "/the_magi_foundation_react/static/js/main.d6862847.js.map"
   },
   "entrypoints": [
     "static/css/main.97114c8a.css",
-    "static/js/main.ff255d9e.js"
+    "static/js/main.d6862847.js"
   ]
 }
