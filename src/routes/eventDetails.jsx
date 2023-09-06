@@ -45,7 +45,7 @@ const EventDetails = (props) => {
 return (
     <div className='py-12 md:py-24'>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 py-5 mx-1 md:mx-10 bg-gradient-to-r from-sky-700 to-purple-500 rounded'>
+        <div className='grid grid-cols-1 md:grid-cols-2 py-5 mx-2 my-5 md:my-0 md:mx-10 bg-gradient-to-r from-sky-700 to-purple-500 rounded'>
 
             <div className='pl-3'>
                 <img className='mx-auto  rounded-xl overflow-hidden' src={image} alt="" />

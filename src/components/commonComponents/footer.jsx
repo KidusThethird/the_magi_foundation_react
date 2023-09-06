@@ -21,12 +21,12 @@ const Footer = () => {
                 <h1 className='text-white font-semibold  text-xl'>The Magi Foundatioon</h1>
             </div>
 
-            <div className='space-y-4'>
+            <div className='space-y-4 py-5 md:py-0'>
                 <h1 className='text-sky-300 text-2xl font-semibold'>Bank Acount</h1>
                 <h1 className='text-gray-400 text-lg'>Birhan Bank - 2501730118682</h1>
             </div>
 
-            <div className='text-gray-400 space-y-4'>
+            <div className='text-gray-400 space-y-4 py-5 md:py-0'>
                 <h1 className='text-sky-300 text-2xl font-semibold'>About Us</h1>
                 <h1>Who We are</h1>
                 <h1>Donate</h1>
@@ -34,7 +34,7 @@ const Footer = () => {
                 
             </div>
 
-            <div className='text-gray-400 space-y-4'>
+            <div className='text-gray-400 space-y-4 py-5 md:py-0'>
                 <h1 className='text-sky-300 text-2xl font-semibold'>Contact</h1>
                 <h1>Bole, Addis Ababa</h1>
                 <h1>Ethiopia +251-978785006</h1>

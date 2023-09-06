@@ -3,6 +3,7 @@ import {KidsList} from '../utils/kidsToSponsor';
 //import { Link } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 
+
 const SponsorShip = (props) => {
 
     const setSponsorShipIndex = props.setSponsorShipIndex;

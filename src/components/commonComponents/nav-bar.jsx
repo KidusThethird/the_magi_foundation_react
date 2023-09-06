@@ -106,28 +106,36 @@ const Navbar = (props) => {
     <Link className='navhover' onClick={()=>toDefalult()} to='/#top'>Home</Link>
     <div onClick={()=>toggleAboutList()} className='flex  space-x-2'>
     <h1 className='cursor-pointer navhover'>About</h1>
-    <CaretDown className='cursor-pointer' size={20}/>
+    <CaretDown className='cursor-pointer my-auto' size={15}/>
     </div>
     {aboutList &&
- <div className='ml-4 flex flex-col space-y-5'>
+ <motion.div 
+ initial={{ y: '-50%' }} // Initial state (off-screen to the left)
+      animate={{ y: aboutList && 0  }} // Animation state (visible or off-screen)
+      transition={{ duration: 0.3 }}
+ className='ml-4 flex flex-col space-y-5'>
   <Link className='navhover' onClick={()=>toDefalult()} to="/ourstory#top">Our Story</Link>
   <Link className='navhover' onClick={()=>toDefalult()} to="/ourteam#top">Our Team</Link>
- </div>
+ </motion.div>
 
     }
    
     <Link className='navhover' onClick={()=>toDefalult()} to='/events#top'>Events</Link>
     <div  onClick={()=>toggleGalleryList()} className='flex  space-x-2'>
     <h1 className='cursor-pointer navhover'>Gallery</h1>
-    <CaretDown className='cursor-pointer' size={20}/>
+    <CaretDown className='cursor-pointer my-auto' size={15}/>
     </div>
     {galleryList &&
-      <div className='ml-4 flex flex-col space-y-5'>
+      <motion.div 
+      initial={{ y: '-50%' }} // Initial state (off-screen to the left)
+      animate={{ y: galleryList && 0  }} // Animation state (visible or off-screen)
+      transition={{ duration: 0.3 }} // Duration of the animation
+      className='ml-4 flex flex-col space-y-5'>
         <Link className='navhover' to="/gallery#top" onClick={() => {setCategorySelected("all"); toDefalult();}}>All</Link>
         <Link className='navhover' to="/gallery#top" onClick={() => {setCategorySelected("school"); toDefalult();}}>School</Link>
         <Link className='navhover' to="/gallery#top" onClick={() => {setCategorySelected("debrebrhan"); toDefalult();}}>Debrebrhan</Link>
         <Link className='navhover' to="/gallery#top" onClick={() => {setCategorySelected("other"); toDefalult();}}>Other</Link>
-    </div>
+    </motion.div>
     }
   
     

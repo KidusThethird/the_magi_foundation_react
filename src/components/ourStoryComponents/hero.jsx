@@ -1,5 +1,7 @@
 import React from 'react'
-import HeroImage1 from '../../assets/images/custom/001.jpg'
+import HeroImage1 from '../../assets/images/custom/001.jpg';
+import { motion } from 'framer-motion';
+
 
 const Hero = () => {
   return (
@@ -30,9 +32,20 @@ const Hero = () => {
         <div className='hidden md:block absolute h-1/2 w-1/2 left-1/3 bg-sky-500 bottom-8 z-0'>
 
         </div>
-        <div className=' absolute h-64 w-64 shadow-2xl shadow-orange-500 right-0 rounded-full bg-sky-500 top-24 z-0'>
+        <motion.div 
+          initial={{ y: 0 }}
+          animate={{
+            y: [-20, 10, -20],
+             // Floating animation along the y-axis
+            transition: {
+              duration: 4,
+              repeat: Infinity,
+              ease: 'easeInOut',
+            },
+          }}
+        className=' absolute h-64 w-64 shadow-2xl shadow-orange-500 right-0 rounded-full bg-sky-500 top-24 z-0'>
 
-</div>
+</motion.div>
     </div>
   )
 }

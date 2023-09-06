@@ -1,17 +1,31 @@
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {KidsList} from '../utils/kidsToSponsor'
+import { motion } from 'framer-motion';
+
 const SponsorshipDetails = (props) => {
 
   const sponsorShipIndex = props.sponsorShipIndex;
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
 
   return (
-    <div className='pt-10'>
+    
+    
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.5 }}
+    style={{ visibility: loaded ? 'visible' : 'hidden' }}
+      className='pt-10'>
 
       <div className='py-10 grid grid-cols-1 sm:grid-cols-2  bg-gradient-to-r from-blue-500 to-purple-500'>
 
         <div className='mx-auto py-5 px-5'>
-          <img className='w-3/4 rounded-2xl shadow-2xl' src={KidsList[sponsorShipIndex].image} alt="" />
+          <img className='w-3/4 mx-auto rounded-2xl shadow-2xl' src={KidsList[sponsorShipIndex].image} alt="" />
         </div>
         <div className='h-full flex'>
           <div className='my-auto mx-5 space-y-4 text-white text-lg'>
@@ -29,7 +43,7 @@ const SponsorshipDetails = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

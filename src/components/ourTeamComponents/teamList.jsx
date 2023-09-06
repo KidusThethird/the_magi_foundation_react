@@ -22,7 +22,7 @@ const TeamList = () => {
     <h1 className='text-center pb-5 ' >{member.name}</h1>
     </div>
 
-    <div className='my-auto col-span-2 px-4 '>
+    <div className='my-auto col-span-2 px-4 pb-4'>
     <h1 className='text-gray-100 font-semibold text-lg pb-2'>{member.position}</h1>
     <p>{member.description}</p>
     </div>
