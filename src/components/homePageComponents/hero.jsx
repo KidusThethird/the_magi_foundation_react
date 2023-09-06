@@ -23,7 +23,7 @@ const Hero = () => {
   }, []); 
 
   return (
-    <div className='pt-10 '>
+    <div  className='pt-10 scroll-smooth'>
 
 <div className='relative flex w-full items-center justify-center'>
 
@@ -86,7 +86,7 @@ const Hero = () => {
               },
             }}
            
-            className='text-blue-600 bg-white p-4 rounded-full cursor-pointer border-2 border-blue-700 border-opacity-40
+            className=' text-blue-600 bg-white p-4 rounded-full cursor-pointer border-2 border-blue-700 border-opacity-40
             hover:scale-105 duration-150'>
               <a href="#about">
             <CaretDown size={32}/>

@@ -18,7 +18,7 @@ const BreakBanner = () => {
     <h1 className=' text-sky-300 underline '>The Cause</h1>
     </div>
     <div className='flex justify-center'>
-    <h1 className='pt-4 px-4 text-lg text-white text-center '>Support the ause and be hope for someone in need.</h1>
+    <h1 className='pt-4 px-4 text-lg text-white text-center '>Support the cause and be hope for someone in need.</h1>
     </div>
       </div>
 
