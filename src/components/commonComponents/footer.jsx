@@ -1,12 +1,23 @@
 import React from 'react'
-import Logo from '../../assets/images/logo/themagilogo1.png'
+import Logo from '../../assets/images/logo/themagilogo1.png';
+import { motion } from 'framer-motion';
 
 const Footer = () => {
   return (
     <div className='bg-blue-950'>
         <div className='md:grid grid-cols-4 px-10 py-10'>
             <div>
-                <img src={Logo} className= 'w-1/6 md:w-1/2 mb-7 shadow-xl rounded-full shadow-sky-400' alt="" />
+                <motion.img
+                 initial={{ y: 0 }}
+                 animate={{
+                   y: [-10, 10, -10], // Floating animation along the y-axis
+                   transition: {
+                     duration: 4,
+                     repeat: Infinity,
+                     ease: 'easeInOut',
+                   },
+                 }}
+                  src={Logo} className= 'w-1/6 md:w-1/2 mb-7 shadow-xl rounded-full shadow-sky-400' alt="" />
                 <h1 className='text-white font-semibold  text-xl'>The Magi Foundatioon</h1>
             </div>
 

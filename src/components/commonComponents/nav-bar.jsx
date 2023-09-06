@@ -3,6 +3,7 @@ import Logo from '../../assets/images/logo/themagilogo1.png';
 //import { Link } from 'react-router-dom';
 import {List , X , CaretDown } from "@phosphor-icons/react";
 import { HashLink as Link } from 'react-router-hash-link';
+import { motion } from 'framer-motion';
 
 const Navbar = (props) => {
 
@@ -94,7 +95,12 @@ const Navbar = (props) => {
 
   
 {dropDownList &&
-  <div  className='w-full flex relative  '>
+  <motion.div
+  
+  initial={{ x: '100%' }} // Initial state (off-screen to the left)
+  animate={{ x: dropDownList && 0  }} // Animation state (visible or off-screen)
+  transition={{ duration: 0.3 }} // Duration of the animation
+  className='w-full flex relative  '>
     <div  className='w-1/2  smd:w-1/3 overflow-y-auto max-h-[500px] scroll-auto  absolute right-0 rounded-bl-2xl shadow-2xl shadow-blue-700 bg-blue-900 bg-opacity-90 text-white  flex flex-col text-left pl-7 space-y-5 py-5'>
    
     <Link className='navhover' onClick={()=>toDefalult()} to='/#top'>Home</Link>
@@ -132,7 +138,7 @@ const Navbar = (props) => {
     <button className='bg-sky-600 px-3 py-1 rounded-2xl hover:bg-sky-500 hover:scale-105 duration-150'>Donate</button>
     </div>
     </div>
-  </div>
+  </motion.div>
 }
   
     </div>
