@@ -56,7 +56,7 @@ return (
                 <h1 className='font-bold py-3'>{date}</h1>
                 <h1 className='py-2 text-gray-300'>{subTitle}</h1>
                 <h1>{description}</h1>
-               <Link to='/events'>
+               <Link to='/the_magi_foundation_react/events'>
                 <button className='mt-5  bg-sky-700 px-3 py-1   h-fit rounded-2xl shadow-xl
                 hover:bg-sky-500 duration-150'>More Events</button>
                 </Link>

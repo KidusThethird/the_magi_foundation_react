@@ -34,27 +34,27 @@ const Navbar = (props) => {
 
 <div className='my-auto flex'>
     <img className='w-8' src={Logo} alt="" />
-    <a href="/">
+    <a href="/the_magi_foundation_react/">
    <h1 className=' sm:block sm:text-xl my-auto pl-5 smd:text-2xl font-semibold text-sky-400'> The Magi Foundation </h1>
    </a>
 </div>
 
 <div className='hidden lg:flex space-x-10 my-auto  '>
-  <Link className='navhover'  to="/#top">Home</Link>
+  <Link className='navhover'  to="/the_magi_foundation_react/#top">Home</Link>
 
 <div className=" group relative  ">
             <h1 className='cursor-pointer group-hover:navhover'>About</h1>
             <div className="hidden group-hover:block absolute w-32  left-0 z-50">
               <div className="flex flex-col px-4 py-1 space-y-2 w-full  bg-blue-900 rounded-b-2xl">
-                <Link className='navhover' to="/ourstory#top">Our Story</Link>
-                <Link className='navhover' to="/ourteam#top">Our Team</Link>
+                <Link className='navhover' to="/the_magi_foundation_react/ourstory#top">Our Story</Link>
+                <Link className='navhover' to="/the_magi_foundation_react/ourteam#top">Our Team</Link>
          
               </div>
             </div>
           </div>
 
 
-<Link className='navhover' to="/events#top">Events</Link>
+<Link className='navhover' to="/the_magi_foundation_react/events#top">Events</Link>
 
 <div className='group relative'>
   <h1 className='cursor-pointer navhover'>Gallery</h1>
@@ -62,17 +62,17 @@ const Navbar = (props) => {
               <div className="flex flex-col px-4 py-1 space-y-2 w-full  bg-blue-900 rounded-b-2xl">
                 
                 
-                <Link className='navhover' to="/gallery#top" onClick={() => setCategorySelected("all")}>All</Link>
-                <Link className='navhover' to="/gallery#top" onClick={() => setCategorySelected("school")}>School</Link>
-                <Link className='navhover' to="/gallery#top" onClick={() => setCategorySelected("debrebrhan")}>Debrebrhan</Link>
-                <Link className='navhover' to="/gallery#top" onClick={() => setCategorySelected("other")}>Other</Link>
+                <Link className='navhover' to="/the_magi_foundation_react/gallery#top" onClick={() => setCategorySelected("all")}>All</Link>
+                <Link className='navhover' to="/the_magi_foundation_react/gallery#top" onClick={() => setCategorySelected("school")}>School</Link>
+                <Link className='navhover' to="/the_magi_foundation_react/gallery#top" onClick={() => setCategorySelected("debrebrhan")}>Debrebrhan</Link>
+                <Link className='navhover' to="/the_magi_foundation_react/gallery#top" onClick={() => setCategorySelected("other")}>Other</Link>
               
               </div>
             </div>
 </div>
-<Link className='navhover' to="/sponsorship#top">SponsorShip</Link>
-<Link className='navhover' to='blogs#top'>Blog</Link>
-<Link className='navhover' to='/contact#top'>Contact</Link>
+<Link className='navhover' to="/the_magi_foundation_react/sponsorship#top">SponsorShip</Link>
+<Link className='navhover' to='/the_magi_foundation_react/blogs#top'>Blog</Link>
+<Link className='navhover' to='/the_magi_foundation_react/contact#top'>Contact</Link>
 
 </div>
 
@@ -106,7 +106,7 @@ const Navbar = (props) => {
   className='w-full flex relative  '>
     <div  className='w-1/2  smd:w-1/3 overflow-y-auto max-h-[500px] scroll-auto  absolute right-0 rounded-bl-2xl shadow-2xl shadow-blue-700 bg-blue-900 bg-opacity-90 text-white  flex flex-col text-left pl-7 space-y-5 py-5'>
    
-    <Link className='navhover' onClick={()=>toDefalult()} to='/#top'>Home</Link>
+    <Link className='navhover' onClick={()=>toDefalult()} to='/the_magi_foundation_react/#top'>Home</Link>
     <div onClick={()=>toggleAboutList()} className='flex  space-x-2'>
     <h1 className='cursor-pointer navhover'>About</h1>
     <CaretDown className='cursor-pointer my-auto' size={15}/>
@@ -117,13 +117,13 @@ const Navbar = (props) => {
       animate={{ y: aboutList && 0  }} // Animation state (visible or off-screen)
       transition={{ duration: 0.3 }}
  className='ml-4 flex flex-col space-y-5'>
-  <Link className='navhover' onClick={()=>toDefalult()} to="/ourstory#top">Our Story</Link>
-  <Link className='navhover' onClick={()=>toDefalult()} to="/ourteam#top">Our Team</Link>
+  <Link className='navhover' onClick={()=>toDefalult()} to="/the_magi_foundation_react/ourstory#top">Our Story</Link>
+  <Link className='navhover' onClick={()=>toDefalult()} to="/the_magi_foundation_react/ourteam#top">Our Team</Link>
  </motion.div>
 
     }
    
-    <Link className='navhover' onClick={()=>toDefalult()} to='/events#top'>Events</Link>
+    <Link className='navhover' onClick={()=>toDefalult()} to='/the_magi_foundation_react/events#top'>Events</Link>
     <div  onClick={()=>toggleGalleryList()} className='flex  space-x-2'>
     <h1 className='cursor-pointer navhover'>Gallery</h1>
     <CaretDown className='cursor-pointer my-auto' size={15}/>
@@ -134,17 +134,17 @@ const Navbar = (props) => {
       animate={{ y: galleryList && 0  }} // Animation state (visible or off-screen)
       transition={{ duration: 0.3 }} // Duration of the animation
       className='ml-4 flex flex-col space-y-5'>
-        <Link className='navhover' to="/gallery#top" onClick={() => {setCategorySelected("all"); toDefalult();}}>All</Link>
-        <Link className='navhover' to="/gallery#top" onClick={() => {setCategorySelected("school"); toDefalult();}}>School</Link>
-        <Link className='navhover' to="/gallery#top" onClick={() => {setCategorySelected("debrebrhan"); toDefalult();}}>Debrebrhan</Link>
-        <Link className='navhover' to="/gallery#top" onClick={() => {setCategorySelected("other"); toDefalult();}}>Other</Link>
+        <Link className='navhover' to="/the_magi_foundation_react/gallery#top" onClick={() => {setCategorySelected("all"); toDefalult();}}>All</Link>
+        <Link className='navhover' to="/the_magi_foundation_react/gallery#top" onClick={() => {setCategorySelected("school"); toDefalult();}}>School</Link>
+        <Link className='navhover' to="/the_magi_foundation_react/gallery#top" onClick={() => {setCategorySelected("debrebrhan"); toDefalult();}}>Debrebrhan</Link>
+        <Link className='navhover' to="/the_magi_foundation_react/gallery#top" onClick={() => {setCategorySelected("other"); toDefalult();}}>Other</Link>
     </motion.div>
     }
   
     
-  <Link className='navhover' onClick={()=>toDefalult()} to="/sponsorship#top">SponsorShip</Link>
-<Link className='navhover' onClick={()=>toDefalult()} to='blogs#top'>Blog</Link>
-<Link className='navhover' onClick={()=>toDefalult()} to='/contact#top'>Contact</Link>
+  <Link className='navhover' onClick={()=>toDefalult()} to="/the_magi_foundation_react/sponsorship#top">SponsorShip</Link>
+<Link className='navhover' onClick={()=>toDefalult()} to='/the_magi_foundation_react/blogs#top'>Blog</Link>
+<Link className='navhover' onClick={()=>toDefalult()} to='/the_magi_foundation_react/contact#top'>Contact</Link>
     <div>
     <button className='bg-sky-600 px-3 py-1 rounded-2xl hover:bg-sky-500 hover:scale-105 duration-150'> 
     <a target='_blank' href="https://www.paypal.com/donate/?hosted_button_id=9V5YC8K6HDLBC"> Donate</a></button>

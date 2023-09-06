@@ -54,7 +54,7 @@ const SponsorShipSample = () => {
         <button className='text-white font-semibold bg-sky-700 mx-auto
          py-2 px-3 md:py-3 text-sm md:text-base md:px-5 rounded-full hover:bg-white hover:text-sky-700 hover:border-2 border-sky-700 duration-300'>
 
-            <a href="/sponsorship">Load More SponsorShips</a>
+            <a href="/the_magi_foundation_react/sponsorship">Load More SponsorShips</a>
          </button>
     </div>
 
