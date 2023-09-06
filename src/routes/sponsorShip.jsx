@@ -28,7 +28,7 @@ const SponsorShip = (props) => {
 const index = (parseInt(kid.id))+1;
 
     return (
-        <Link to="/sponsorshipdetails#top">
+        <Link to="/the_magi_foundation_react/sponsorshipdetails#top">
     <div onClick={()=>changeSponsorShipIndex(kid.id)} className='relative shadow-2xl hover:shadow-sky-700 rounded-b-3xl overflow-hidden'>
         <div  className='rounded-t-3xl  overflow-hidden'>
     <img src={kid.image} className='rounded-b-3xl hover:scale-110 overflow-hidden transition-all duration-500' alt="" />
