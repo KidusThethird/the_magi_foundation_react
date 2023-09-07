@@ -36,17 +36,17 @@ const [categorySelected , setCategorySelected] = useState("all");
   <Navbar setCategorySelected={setCategorySelected}/>
   <Routes>
    
-   <Route path='/the_magi_foundation_react/' element={<Home setBlogIndex={setBlogIndex}/>}/>
-   <Route path='/the_magi_foundation_react/ourstory' element={<OurStory />}/>
-   <Route path='/the_magi_foundation_react/ourteam' element={<OurTeam />}/>
-   <Route path='/the_magi_foundation_react/events' element={<Events  setEventIndex={setEventIndex}/>}/>
-   <Route path='/the_magi_foundation_react/eventdetails' element={<EventDetails  eventIndex={eventIndex} />} />
-   <Route path='/the_magi_foundation_react/gallery' element={<Gallery categorySelected={categorySelected} setCategorySelected={setCategorySelected}/>} />
-   <Route path='/the_magi_foundation_react/sponsorship' element={<SponsorShip   setSponsorShipIndex={setSponsorShipIndex}/>}/>
-   <Route path='/the_magi_foundation_react/sponsorshipdetails' element={<SponsorshipDetails sponsorShipIndex={sponsorShipIndex} />}/>
-   <Route path='/the_magi_foundation_react/blogs' element={<Blogs setBlogIndex={setBlogIndex}/>} />
-   <Route path='/the_magi_foundation_react/blogdetails' element={<BlogDetails blogIndex={blogIndex}/>} />
-   <Route path='/the_magi_foundation_react/contact' element={<Contact/>} />
+   <Route path='/' element={<Home setBlogIndex={setBlogIndex}/>}/>
+   <Route path='/ourstory' element={<OurStory />}/>
+   <Route path='/ourteam' element={<OurTeam />}/>
+   <Route path='/events' element={<Events  setEventIndex={setEventIndex}/>}/>
+   <Route path='/eventdetails' element={<EventDetails  eventIndex={eventIndex} />} />
+   <Route path='/gallery' element={<Gallery categorySelected={categorySelected} setCategorySelected={setCategorySelected}/>} />
+   <Route path='/sponsorship' element={<SponsorShip   setSponsorShipIndex={setSponsorShipIndex}/>}/>
+   <Route path='/sponsorshipdetails' element={<SponsorshipDetails sponsorShipIndex={sponsorShipIndex} />}/>
+   <Route path='/blogs' element={<Blogs setBlogIndex={setBlogIndex}/>} />
+   <Route path='/blogdetails' element={<BlogDetails blogIndex={blogIndex}/>} />
+   <Route path='/contact' element={<Contact/>} />
    
   </Routes>
 

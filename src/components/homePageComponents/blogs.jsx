@@ -67,7 +67,7 @@ const Blog = (props) => {
         <h1 className="w-full">Title: {blog.topic}</h1>
         <h1>Genre: {blog.genre}</h1>
         <div className=''>
-            <Link to="/the_magi_foundation_react/blogdetails#top">
+            <Link to="/blogdetails#top">
             <button onClick={()=>changeBlogIndex(blog.id)}  className='bg-sky-700 px-3 py-1 rounded-xl
             hover:scale-105 hover:bg-sky-500 duration-150'>Read</button>
             </Link>
