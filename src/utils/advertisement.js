@@ -1,18 +1,17 @@
-import BlogImage5 from '../assets/images/blog/blog5.jpg';
-import Ad1Image1 from '../assets/images/advertisement/ad1.jpg'
-
+import BlogImage5 from "../assets/images/blog/blog5.jpg";
+import Ad1Image1 from "../assets/images/advertisement/eventpic003.jpg";
+import Ad2Image2 from "../assets/images/advertisement/eventpic002.jpg";
+import AdVideo from "../assets/images/advertisement/video/eventvid002.mp4";
 
 export const AdvertisementList = [
-    {
-        title: "Eat for a Cause!",
-        miniTitle:"In partner with Jano Ethiopian Restaurant",
-        images: [Ad1Image1],
-        date: "From Sep 3 to Sep 9",
-        location: "Jano Ethiopian Restaurant",
-        description: "Join Us as we Partner with Jano Ethiopian Restaurant for each meal enjoyed, 25% of the cost will be donated to our charity.",
-        link:"",
-        displayOnHompage: true
-
-
-    }
-]
+  {
+    title: "Auction and Fundraising",
+    miniTitle: "In partner with Jano Ethiopian Restaurant",
+    images: [Ad2Image2],
+    date: "April 27, 6PM-9PM ",
+    location: "2850 Fannin St Houston, Tx 77003(Sky Lounge) Free Valet Parking",
+    description: "A small act of lobe has the power to raise a child",
+    link: "",
+    displayOnHompage: true,
+  },
+];
