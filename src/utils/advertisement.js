@@ -6,7 +6,7 @@ import AdVideo from "../assets/images/advertisement/video/eventvid002.mp4";
 export const AdvertisementList = [
   {
     title: "Auction and Fundraising",
-    miniTitle: "In partner with Jano Ethiopian Restaurant",
+    miniTitle: "Give a Little, Change a Lot",
     images: [Ad2Image2],
     date: "April 27, 6PM-9PM ",
     location: "2850 Fannin St Houston, Tx 77003(Sky Lounge) Free Valet Parking",
