@@ -10,7 +10,7 @@ export const AdvertisementList = [
     images: [Ad2Image2],
     date: "April 27, 6PM-9PM ",
     location: "2850 Fannin St Houston, Tx 77003(Sky Lounge) Free Valet Parking",
-    description: "A small act of lobe has the power to raise a child",
+    description: "A small act of love has the power to raise a child",
     link: "",
     displayOnHompage: true,
   },
