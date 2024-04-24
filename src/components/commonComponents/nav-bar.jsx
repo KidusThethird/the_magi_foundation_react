@@ -115,8 +115,9 @@ const Navbar = (props) => {
           <div className="hidden lg:block bg-sky-600 px-4 py-2 rounded-3xl duration-150 hover:scale-105 hover:font-bold hover:bg-sky-400 ">
             <button>
               <a
-                target="_blank"
-                href="https://www.paypal.com/donate/?hosted_button_id=9V5YC8K6HDLBC"
+                // target="_blank"
+                href="/choosedonation"
+                //  href="https://www.paypal.com/donate/?hosted_button_id=9V5YC8K6HDLBC"
               >
                 {" "}
                 Donate
@@ -266,8 +267,9 @@ const Navbar = (props) => {
               <div>
                 <button className="bg-sky-600 px-3 py-1 rounded-2xl hover:bg-sky-500 hover:scale-105 duration-150">
                   <a
-                    target="_blank"
-                    href="https://www.paypal.com/donate/?hosted_button_id=9V5YC8K6HDLBC"
+                    //  target="_blank"
+                    //   href="https://www.paypal.com/donate/?hosted_button_id=9V5YC8K6HDLBC"
+                    href="/choosedonation"
                   >
                     {" "}
                     Donate

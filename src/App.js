@@ -23,6 +23,7 @@ import BlogDetails from "./routes/blogDetails";
 import Contact from "./routes/contact";
 import DHome from "./dashboard/pages/dHome";
 import DNavbar from "./dashboard/components/dNavbar";
+import ChoosePayment from "./routes/choosePayment";
 
 function App() {
   const [eventIndex, setEventIndex] = useState("001");
@@ -76,6 +77,7 @@ function App() {
             path="/blogdetails"
             element={<BlogDetails blogIndex={blogIndex} />}
           />
+          <Route path="/choosedonation" element={<ChoosePayment />} />
           <Route path="/contact" element={<Contact />} />
         </Route>
         {/* Dashboard links*/}
