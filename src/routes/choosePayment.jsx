@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/commonComponents/footer";
 
 export default function ChoosePayment() {
   return (
@@ -33,6 +34,7 @@ export default function ChoosePayment() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
