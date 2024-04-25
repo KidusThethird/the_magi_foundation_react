@@ -69,7 +69,7 @@ const Advertisement = () => {
         );
       })}
 
-      <div className=" w-full flex">
+      {/* <div className=" w-full flex">
         <div className=" w-fit mx-auto">
           <div className="my-10 w-fit ">
             <video controls className="px-7 md:h-1/2 md:w-1/2  md:mx-auto ">
@@ -78,7 +78,7 @@ const Advertisement = () => {
             </video>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
