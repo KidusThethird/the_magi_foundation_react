@@ -1,5 +1,7 @@
 import React from "react";
+
 import Footer from "../components/commonComponents/footer";
+import StripePricingTable from "../components/otherComponents/stripeTable";
 
 export default function ChoosePayment() {
   return (
@@ -26,7 +28,7 @@ export default function ChoosePayment() {
               </p>
             </div>
           </div>
-          <div className="flex mx-auto w-full">
+          {/* <div className="flex mx-auto w-full">
             <div className="w-fit mx-auto">
               <a
                 target="_blank"
@@ -37,6 +39,10 @@ export default function ChoosePayment() {
                 </h1>
               </a>
             </div>
+          </div> */}
+
+          <div className="py-5">
+            <StripePricingTable />
           </div>
         </div>
       </div>

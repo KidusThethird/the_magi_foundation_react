@@ -10,6 +10,10 @@
 
     "@phosphor-icons/react": "^2.0.10",
 
+    "@stripe/react-stripe-js": "^2.7.1",
+
+    "@stripe/stripe-js": "^3.4.1",
+
     "@testing-library/jest-dom": "^5.17.0",
 
     "@testing-library/react": "^13.4.0",
