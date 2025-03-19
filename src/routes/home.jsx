@@ -11,6 +11,7 @@ import ContactUsForm from "../components/commonComponents/contactUsForm";
 import SponsorShipSample from "../components/homePageComponents/sponsorShipsample";
 import YoutubeSection from "../components/homePageComponents/youtubeSection";
 import Footer from "../components/commonComponents/footer";
+import ImageSlider from "../components/homePageComponents/imageslide";
 
 const home = (props) => {
   const setBlogIndex = props.setBlogIndex;
@@ -21,6 +22,7 @@ const home = (props) => {
       <About />
       <Blog setBlogIndex={setBlogIndex} />
       <Advertisment />
+      <ImageSlider />
       <BreakBanner />
       <SponsorShipSample />
       <OurVenue />
